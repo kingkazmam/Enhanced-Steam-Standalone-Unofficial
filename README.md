@@ -1,7 +1,7 @@
 # Enhanced Steam Standalone Unofficial
 > Steam Client gets Enhanced
 
-Enhanced Steam Standalone Unofficial is a shell made by [darc phansea] (http://steamcommunity.com/profiles/76561198373212815) for the [Enhanced Steam] (https://github.com/jshackles/Enhanced_Steam) browser extension 
+Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://steamcommunity.com/profiles/76561198373212815) for the [Enhanced Steam](https://github.com/jshackles/Enhanced_Steam) browser extension 
 
 ![](header.png)
 
