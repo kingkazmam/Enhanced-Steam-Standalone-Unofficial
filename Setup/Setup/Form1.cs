@@ -26,6 +26,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IWshRuntimeLibrary;
 
 namespace Setup
 {
@@ -59,6 +60,19 @@ namespace Setup
             }
             
         }
+        
+
+        private void CreateShortcut()
+        {
+            object shDesktop = (object)"Desktop";
+            WshShell shell = new WshShell();
+            string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\Enhanced Steam Standalone Unofficial.lnk";
+            IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
+            shortcut.Description = "Steam Client Enhanced";
+            shortcut.WorkingDirectory = @"C:\Program Files (x86)\ESSU\";
+            shortcut.TargetPath = @"C:\Program Files (x86)\ESSU\ESSULauncher.exe";
+            shortcut.Save();
+        }
 
         private void btn_install_Click(object sender, EventArgs e)
         {
@@ -76,6 +90,8 @@ namespace Setup
 
                 ZipFile zip2 = ZipFile.Read(Application.StartupPath + @"\Setup2.zip");
                 zip2.ExtractAll(@"C:\Program Files (x86)\", ExtractExistingFileAction.OverwriteSilently);
+                MessageBox.Show("Installation Completed");
+                CreateShortcut();
             }
         }
     }
