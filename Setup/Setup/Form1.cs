@@ -39,7 +39,7 @@ namespace Setup
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Warning This Will Wipe Vivaldi Settings. It is recommended that you don't use vivaldi as your default browser");
+           
             try
             {
                 Process.Start("vivaldi");
@@ -52,11 +52,12 @@ namespace Setup
                         catch { }
                     }
                 }
+                MessageBox.Show("Warning this will wipe Vivaldi settings. It is recommended that you don't use Vivaldi as your default browser");
                 chk_1.Checked = true;
             }
             catch
             {
-
+                MessageBox.Show("Vivaldi not installed. Please Install Vivaldi either from their site or with the provided .exe");
             }
             
         }

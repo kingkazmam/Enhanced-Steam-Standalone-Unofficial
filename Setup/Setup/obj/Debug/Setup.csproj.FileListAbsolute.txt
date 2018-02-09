@@ -24,3 +24,5 @@ D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.pdb
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Interop.IWshRuntimeLibrary.dll
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.csproj.ResolveComReference.cache
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Interop.IWshRuntimeLibrary.dll
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.csproj.ResolveComReference.cache
