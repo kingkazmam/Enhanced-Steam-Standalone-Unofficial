@@ -6,8 +6,13 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://st
 ![](header.png)
 
 ## Installation
+
 1. Run Setup.exe
 2. Profit
+
+## Contribute
+
+Contact me on steam - http://steamcommunity.com/profiles/76561198373212815
 
 ## License
 

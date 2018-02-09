@@ -1,0 +1,12 @@
+D:\ESSU Source Files\Setup\Setup\bin\Debug\Setup.exe.config
+D:\ESSU Source Files\Setup\Setup\bin\Debug\Setup.exe
+D:\ESSU Source Files\Setup\Setup\bin\Debug\Setup.pdb
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.csprojResolveAssemblyReference.cache
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.Form1.resources
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.Properties.Resources.resources
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.csproj.GenerateResource.Cache
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.csproj.CoreCompileInputs.cache
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.exe
+D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.pdb
+D:\ESSU Source Files\Setup\Setup\bin\Debug\DotNetZip.dll
+D:\ESSU Source Files\Setup\Setup\bin\Debug\DotNetZip.xml
