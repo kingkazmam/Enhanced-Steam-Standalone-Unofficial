@@ -1278,15 +1278,9 @@ namespace ESSU
                         l = l.Replace("	", string.Empty);
                         webGameArray[indexGame, 0] = l;
                     }
-                    if (line.Contains("	<div class=\"gameListRowItemName ellipsis \">") || line.Contains("<div class=\"gameListRowItemName ellipsis color_uninstalled\">") || line.Contains("<div class=\"gameListRowItemName ellipsis color_disabled\">"))
+                    if (line.Contains("<div class=\"gameListRowItemName ellipsis \">") || line.Contains("<div class=\"gameListRowItemName ellipsis color_uninstalled\">") || line.Contains("<div class=\"gameListRowItemName ellipsis color_disabled\">"))
                     {
                         if (line.Contains("<div class=\"gameListRowItemName ellipsis color_disabled\">"))
-                        {
-                            webGameArray[indexGame, 0] = null;
-                            webGameArray[indexGame, 1] = null;
-                            continue;
-                        }
-                        if (line.Contains("<div class=\"gameListRowItemName ellipsis \">"))
                         {
                             webGameArray[indexGame, 0] = null;
                             webGameArray[indexGame, 1] = null;
