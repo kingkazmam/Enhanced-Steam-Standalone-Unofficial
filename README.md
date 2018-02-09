@@ -6,10 +6,8 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://st
 ![](header.png)
 
 ## Installation
-1. Install Vivaldi
-2. Add the Enhanced Steam chrome extension to Vivaldi.
-3. Go To Vivaldi Settings > Appearance > Disable User Interface
-
+1. Run Setup.exe
+2. Profit
 
 ## License
 
