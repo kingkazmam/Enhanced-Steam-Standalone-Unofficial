@@ -9,7 +9,6 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://st
 
 1. Run Setup.exe
 2. Profit
-3. For desktop shortcut go to C:\Program Files (x86)\ESSU and send ESSULauncher.exe to desktop.
 
 ## Contribute
 
