@@ -1,0 +1,25 @@
+D:\Chrome\Chrome\bin\x64\Debug\Enhanced Steam.exe.config
+D:\Chrome\Chrome\bin\x64\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\bin\x64\Debug\Enhanced Steam.pdb
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.Core.dll
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.dll
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.WinForms.dll
+D:\Chrome\Chrome\bin\x64\Debug\HtmlAgilityPack.dll
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.WinForms.pdb
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.WinForms.xml
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.pdb
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.xml
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.Core.pdb
+D:\Chrome\Chrome\bin\x64\Debug\CefSharp.Core.xml
+D:\Chrome\Chrome\bin\x64\Debug\HtmlAgilityPack.pdb
+D:\Chrome\Chrome\bin\x64\Debug\HtmlAgilityPack.xml
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.csprojResolveAssemblyReference.cache
+D:\Chrome\Chrome\obj\x64\Debug\Interop.SHDocVw.dll
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.csproj.ResolveComReference.cache
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.frm_main.resources
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.Friends_Window.resources
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.Properties.Resources.resources
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.csproj.GenerateResource.Cache
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced_Steam.csproj.CoreCompileInputs.cache
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\obj\x64\Debug\Enhanced Steam.pdb

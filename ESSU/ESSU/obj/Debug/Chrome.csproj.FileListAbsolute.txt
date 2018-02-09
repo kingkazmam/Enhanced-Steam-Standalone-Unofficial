@@ -1,0 +1,13 @@
+D:\Chrome\Chrome\obj\Debug\Chrome.csprojResolveAssemblyReference.cache
+D:\Chrome\Chrome\obj\Debug\Chrome.csproj.GenerateResource.Cache
+D:\Chrome\Chrome\obj\Debug\Chrome.csproj.CoreCompileInputs.cache
+D:\Chrome\Chrome\obj\Debug\Chrome.frm_main.resources
+D:\Chrome\Chrome\bin\Debug\NDde.dll
+D:\Chrome\Chrome\obj\Debug\Interop.SHDocVw.dll
+D:\Chrome\Chrome\obj\Debug\Chrome.csproj.ResolveComReference.cache
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.exe.config
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.pdb
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.Properties.Resources.resources
+D:\Chrome\Chrome\obj\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\obj\Debug\Enhanced Steam.pdb

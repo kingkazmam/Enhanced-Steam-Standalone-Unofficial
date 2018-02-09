@@ -1,0 +1,48 @@
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.Core.dll
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.dll
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.dll
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.pdb
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.xml
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.pdb
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.xml
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.Core.pdb
+D:\Chrome\Chrome\bin\x64\Release\CefSharp.Core.xml
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csprojResolveAssemblyReference.cache
+D:\Chrome\Chrome\obj\x64\Release\Interop.SHDocVw.dll
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.ResolveComReference.cache
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Friends_Window.resources
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Properties.Resources.resources
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.GenerateResource.Cache
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.CoreCompileInputs.cache
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Settings_Window.resources
+D:\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe.config
+D:\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\Chrome\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\Chrome\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Main_Window.resources
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe.config
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.Core.dll
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.dll
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.dll
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.pdb
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.WinForms.xml
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.pdb
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.xml
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.Core.pdb
+D:\Tests For ESSU\Chrome\Chrome\bin\x64\Release\CefSharp.Core.xml
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csprojResolveAssemblyReference.cache
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Interop.SHDocVw.dll
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.ResolveComReference.cache
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Main_Window.resources
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Friends_Window.resources
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Properties.Resources.resources
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Settings_Window.resources
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.GenerateResource.Cache
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.csproj.CoreCompileInputs.cache
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\Tests For ESSU\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Categories.resources
+D:\Chrome\Chrome\obj\x64\Release\Enhanced_Steam.Categories.resources

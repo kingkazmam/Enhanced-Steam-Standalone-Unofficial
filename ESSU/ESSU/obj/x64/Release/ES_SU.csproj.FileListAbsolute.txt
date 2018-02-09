@@ -1,0 +1,24 @@
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe.config
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.Core.dll
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.dll
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.WinForms.dll
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.WinForms.pdb
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.WinForms.xml
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.pdb
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.xml
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.Core.pdb
+D:\ESSU Source Files\ESSU\Chrome\bin\x64\Release\CefSharp.Core.xml
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.csprojResolveAssemblyReference.cache
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\Interop.SHDocVw.dll
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.csproj.ResolveComReference.cache
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.Categories.resources
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.Main_Window.resources
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.Friends_Window.resources
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.Properties.Resources.resources
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.Settings_Window.resources
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.csproj.GenerateResource.Cache
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\ES_SU.csproj.CoreCompileInputs.cache
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\ESSU Source Files\ESSU\Chrome\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb

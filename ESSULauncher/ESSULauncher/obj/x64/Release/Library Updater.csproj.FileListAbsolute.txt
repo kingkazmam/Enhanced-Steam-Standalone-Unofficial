@@ -1,0 +1,19 @@
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\ESSULauncher.exe.config
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\ESSULauncher.exe
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\ESSULauncher.pdb
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.Core.dll
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.dll
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.WinForms.dll
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.WinForms.pdb
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.WinForms.xml
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.pdb
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.xml
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.Core.pdb
+D:\Tests For ESSU\Library Updater\Library Updater\bin\x64\Release\CefSharp.Core.xml
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\Library_Updater.Form1.resources
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\Library_Updater.Properties.Resources.resources
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\Library Updater.csproj.GenerateResource.Cache
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\Library Updater.csproj.CoreCompileInputs.cache
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\ESSULauncher.exe
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\ESSULauncher.pdb
+D:\Tests For ESSU\Library Updater\Library Updater\obj\x64\Release\Library Updater.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+D:\Chrome\Chrome\obj\Debug\Interop.SHDocVw.dll
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.csproj.ResolveComReference.cache
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.Properties.Resources.resources
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.csproj.GenerateResource.Cache
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.csproj.CoreCompileInputs.cache
+D:\Chrome\Chrome\obj\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\obj\Debug\Enhanced Steam.pdb
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.exe.config
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.exe
+D:\Chrome\Chrome\bin\Debug\Enhanced Steam.pdb
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.csprojResolveAssemblyReference.cache
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.frm_main.resources
+D:\Chrome\Chrome\bin\Debug\HtmlAgilityPack.dll
+D:\Chrome\Chrome\bin\Debug\HtmlAgilityPack.pdb
+D:\Chrome\Chrome\bin\Debug\HtmlAgilityPack.xml
+D:\Chrome\Chrome\obj\Debug\Enhanced_Steam.Friends_Window.resources
