@@ -12,7 +12,9 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://st
 
 ## Contribute
 
-Contact me on steam - http://steamcommunity.com/profiles/76561198373212815
+If you find ways to code a certain part better please send me the original piece of code as well as the improved version.
+If you have additions you've coded that you wish to see in this version please send me a copy.
+Suggestions? All of this can be done if you contact me on steam - http://steamcommunity.com/profiles/76561198373212815
 
 ## License
 
