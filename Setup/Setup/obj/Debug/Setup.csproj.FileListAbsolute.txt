@@ -10,3 +10,15 @@ D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.exe
 D:\ESSU Source Files\Setup\Setup\obj\Debug\Setup.pdb
 D:\ESSU Source Files\Setup\Setup\bin\Debug\DotNetZip.dll
 D:\ESSU Source Files\Setup\Setup\bin\Debug\DotNetZip.xml
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\bin\Debug\Setup.exe.config
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\bin\Debug\Setup.exe
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\bin\Debug\Setup.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\bin\Debug\DotNetZip.dll
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\bin\Debug\DotNetZip.xml
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.csprojResolveAssemblyReference.cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.Form1.resources
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.Properties.Resources.resources
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.csproj.GenerateResource.Cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.csproj.CoreCompileInputs.cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.exe
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\Setup\Setup\obj\Debug\Setup.pdb

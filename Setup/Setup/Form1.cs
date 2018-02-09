@@ -57,6 +57,7 @@ namespace Setup
             {
 
             }
+            
         }
 
         private void btn_install_Click(object sender, EventArgs e)
@@ -70,9 +71,11 @@ namespace Setup
             else
             {
                 ZipFile zip = ZipFile.Read(Application.StartupPath + @"\Setup1.zip");
-                zip.ExtractAll(Environment.SpecialFolder.LocalApplicationData + @"\Vivaldi\User Data", ExtractExistingFileAction.OverwriteSilently);
+                string viv = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Vivaldi\User Data\";
+                zip.ExtractAll(viv, ExtractExistingFileAction.OverwriteSilently);
+
                 ZipFile zip2 = ZipFile.Read(Application.StartupPath + @"\Setup2.zip");
-                zip2.ExtractAll(@"C:\Program Files (x86)", ExtractExistingFileAction.OverwriteSilently);
+                zip2.ExtractAll(@"C:\Program Files (x86)\", ExtractExistingFileAction.OverwriteSilently);
             }
         }
     }
