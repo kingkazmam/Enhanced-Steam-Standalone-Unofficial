@@ -8,4 +8,4 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea] (http://s
 License
 -------
 
-Enhanced Steam is Copyright 2018 Nicholas Santiago.  This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License v3 or newer as published by the Free Software Foundation.  A copy of the GNU General Public License v3 can be found in [LICENSE](LICENSE) or at https://www.gnu.org/licenses/gpl-3.0.html.
+Enhanced Steam Standalone Unofficial is Copyright 2018 Nicholas Santiago.  This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License v3 or newer as published by the Free Software Foundation.  A copy of the GNU General Public License v3 can be found in [LICENSE](LICENSE) or at https://www.gnu.org/licenses/gpl-3.0.html.
