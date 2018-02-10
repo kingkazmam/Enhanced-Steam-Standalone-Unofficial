@@ -68,7 +68,7 @@ namespace Setup
 
         private void btn_install_Click(object sender, EventArgs e)
         {
-            if (chk_1.Checked == false)
+            if (chk_1.Checked == true)
             {
                 ZipFile zip = ZipFile.Read(Application.StartupPath + @"\Setup1.zip");
                 string viv = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Vivaldi\User Data\";
