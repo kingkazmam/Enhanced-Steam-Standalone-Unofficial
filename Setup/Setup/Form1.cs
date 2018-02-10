@@ -59,8 +59,8 @@ namespace Setup
             string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\Enhanced Steam Standalone Unofficial.lnk";
             IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
             shortcut.Description = "Steam Client Enhanced";
-            shortcut.WorkingDirectory = @"C:\Program Files (x86)\ESSU\";
-            shortcut.TargetPath = @"C:\Program Files (x86)\ESSU\ESSULauncher.exe";
+            shortcut.WorkingDirectory = @"C:\ESSU\";
+            shortcut.TargetPath = @"C:\ESSU\ESSULauncher.exe";
             shortcut.Save();
         }
 
@@ -79,7 +79,7 @@ namespace Setup
                 zip.ExtractAll(viv, ExtractExistingFileAction.OverwriteSilently);
 
                 ZipFile zip2 = ZipFile.Read(Application.StartupPath + @"\Setup2.zip");
-                zip2.ExtractAll(@"C:\Program Files (x86)\", ExtractExistingFileAction.OverwriteSilently);
+                zip2.ExtractAll(@"C:\", ExtractExistingFileAction.OverwriteSilently);
                 MessageBox.Show("Installation Completed");
                 CreateShortcut();
             }
