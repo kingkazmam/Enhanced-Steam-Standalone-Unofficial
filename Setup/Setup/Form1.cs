@@ -48,6 +48,8 @@ namespace Setup
             else
             {
                 MessageBox.Show("Vivaldi not installed. Please Install Vivaldi either from their site or with the provided .exe");
+                try { Process.Start(Application.StartupPath + @"\Install Vivaldi.exe"); } catch { }
+                Application.Exit();
             }
         }
         
@@ -67,12 +69,6 @@ namespace Setup
         private void btn_install_Click(object sender, EventArgs e)
         {
             if (chk_1.Checked == false)
-            {
-                MessageBox.Show("Vivaldi is not installed, we will start the installer. Once finished relaunch the installer");
-                Process.Start(Application.StartupPath + @"\Install Vivaldi.exe");
-                Application.Exit();
-            }
-            else
             {
                 ZipFile zip = ZipFile.Read(Application.StartupPath + @"\Setup1.zip");
                 string viv = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Vivaldi\User Data\";
