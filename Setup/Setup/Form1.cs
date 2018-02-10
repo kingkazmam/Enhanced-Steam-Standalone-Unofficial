@@ -39,27 +39,16 @@ namespace Setup
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-            try
+            string viv = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Vivaldi\";
+            if (Directory.Exists(viv))
             {
-                Process.Start("vivaldi");
-                Process[] myProcesses = Process.GetProcessesByName("vivaldi");
-                if (myProcesses.Count() > 0)
-                {
-                    foreach (Process proc in myProcesses)
-                    {
-                        try { proc.Kill(); }
-                        catch { }
-                    }
-                }
                 MessageBox.Show("Warning this will wipe Vivaldi settings. It is recommended that you don't use Vivaldi as your default browser");
                 chk_1.Checked = true;
             }
-            catch
+            else
             {
                 MessageBox.Show("Vivaldi not installed. Please Install Vivaldi either from their site or with the provided .exe");
             }
-            
         }
         
 
