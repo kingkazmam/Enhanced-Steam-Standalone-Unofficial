@@ -47,6 +47,21 @@ namespace ESSU
             catch { }
         }
 
+        Point mousePos = new Point(0, 0);
+        private void panel_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousePos = new Point(e.X, e.Y);
+        }
+
+        private void panel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - mousePos.X;
+                this.Top += e.Y - mousePos.Y;
+            }
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             string info = "";

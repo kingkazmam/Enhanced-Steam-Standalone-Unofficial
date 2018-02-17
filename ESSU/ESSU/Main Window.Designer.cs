@@ -95,6 +95,7 @@ namespace ESSU
             this.context_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.enhancedSteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vivaldiExtensionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.signInToSteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutOfSteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -575,7 +576,7 @@ namespace ESSU
             this.btn_achieve.Name = "btn_achieve";
             this.btn_achieve.Size = new System.Drawing.Size(52, 42);
             this.btn_achieve.TabIndex = 28;
-            this.btn_achieve.Text = "&&";
+            this.btn_achieve.Text = "%";
             this.btn_achieve.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_achieve.UseVisualStyleBackColor = false;
             this.btn_achieve.Click += new System.EventHandler(this.btn_achieve_Click);
@@ -788,13 +789,13 @@ namespace ESSU
             this.btn_playGame.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_playGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.btn_playGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_playGame.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btn_playGame.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_playGame.ForeColor = System.Drawing.Color.White;
             this.btn_playGame.Location = new System.Drawing.Point(327, 45);
             this.btn_playGame.Name = "btn_playGame";
-            this.btn_playGame.Size = new System.Drawing.Size(52, 42);
+            this.btn_playGame.Size = new System.Drawing.Size(57, 50);
             this.btn_playGame.TabIndex = 9;
-            this.btn_playGame.Text = "4";
+            this.btn_playGame.Text = "▶";
             this.btn_playGame.UseVisualStyleBackColor = false;
             this.btn_playGame.Click += new System.EventHandler(this.btn_playGame_Click);
             // 
@@ -972,6 +973,7 @@ namespace ESSU
             this.context_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.enhancedSteamToolStripMenuItem,
             this.vivaldiExtensionsToolStripMenuItem,
+            this.bookmarksToolStripMenuItem,
             this.toolStripSeparator3,
             this.signInToSteamToolStripMenuItem,
             this.signOutOfSteamToolStripMenuItem,
@@ -984,7 +986,7 @@ namespace ESSU
             this.context_menu.Name = "menu_dropdown";
             this.context_menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.context_menu.ShowImageMargin = false;
-            this.context_menu.Size = new System.Drawing.Size(185, 198);
+            this.context_menu.Size = new System.Drawing.Size(185, 220);
             // 
             // enhancedSteamToolStripMenuItem
             // 
@@ -1001,6 +1003,14 @@ namespace ESSU
             this.vivaldiExtensionsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.vivaldiExtensionsToolStripMenuItem.Text = "Extensions";
             this.vivaldiExtensionsToolStripMenuItem.Click += new System.EventHandler(this.vivaldiExtensionsToolStripMenuItem_Click);
+            // 
+            // bookmarksToolStripMenuItem
+            // 
+            this.bookmarksToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.bookmarksToolStripMenuItem.Name = "bookmarksToolStripMenuItem";
+            this.bookmarksToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.bookmarksToolStripMenuItem.Text = "Bookmarks";
+            this.bookmarksToolStripMenuItem.Click += new System.EventHandler(this.bookmarksToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -1672,6 +1682,7 @@ namespace ESSU
         private System.Windows.Forms.Label resizeL;
         private System.Windows.Forms.Label resizeR;
         private System.Windows.Forms.ToolStripMenuItem addToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookmarksToolStripMenuItem;
     }
 }
 

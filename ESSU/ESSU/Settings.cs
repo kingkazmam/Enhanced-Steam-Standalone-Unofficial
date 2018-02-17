@@ -33,6 +33,8 @@ namespace ESSU
          gameArray[index, 3] = Full Name;
          gameArray[index, 4] = Steamapp Folder;
         */
+        public static string bookmarkGOTO = string.Empty;
+
         public static string tempName = "";
 
         public static string[] steamDirectories = new string[10000];

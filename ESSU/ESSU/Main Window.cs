@@ -36,7 +36,6 @@ using System.Drawing.Imaging;
 
 namespace ESSU
 {
-
     public partial class Main_Window : Form
     {
         private Bitmap ChangeBrightness(Bitmap image, int alpha)
@@ -150,7 +149,6 @@ namespace ESSU
                 loadImage(gameArray[list_games.SelectedIndex, 0]);
             }
             catch { }
-
         }
 
         private void list_games_DrawItem(object sender, DrawItemEventArgs e)
@@ -244,7 +242,6 @@ namespace ESSU
             int[] index = new int[list_games.Items.Count];
             if (Settings.tempName == "startRefresh")
             {
-                
                 steamGameListUpdate();
                 for (int x = 0; x < list_games.Items.Count; x++)
                 {
@@ -256,8 +253,19 @@ namespace ESSU
                 showCate();
                 Settings.tempName = null;
             }
+            if (Settings.bookmarkGOTO != string.Empty)
+            {
+                try
+                {
+                    launchVivaldi(Settings.bookmarkGOTO);
+                } catch { }
+                Settings.bookmarkGOTO = string.Empty;
+            }
+
             if (this.Width == this.MinimumSize.Width && picture_game_preview.Width != 494) picture_game_preview.Width = 494;
             if (list_games.SelectedIndex == -1) picture_game_preview.Image = null;
+
+            
 
             if (picture_game_preview.Height != Math.Round(picture_game_preview.Width * 0.4673913043478261)) picture_game_preview.Height = (int)Math.Round(picture_game_preview.Width * 0.4673913043478261);
 
@@ -1202,7 +1210,6 @@ namespace ESSU
             }
             try
             {
-                
                 for (int i = 0; i < gameArray.GetLongLength(0); i++)
                 {
                     if (String.IsNullOrEmpty(gameArray[i, 0])) continue;
@@ -1210,12 +1217,15 @@ namespace ESSU
                     {
                         loadImage(gameArray[i, 1]);
                         lbl_gameTitle.Text = gameArray[i, 3];
-                        return;
+                        if (!string.IsNullOrEmpty(gameArray[i, 2])) { btn_playGame.Text = "▶"; btn_playGame.Font = new Font("Segoe UI", 16); }
+                        else { btn_playGame.Text = "⬇"; btn_playGame.Font = new Font("Segoe UI", 20); }
+                        return;   
                     }
                     else
                     {
                         picture_game_preview.Image = null;
                         lbl_gameTitle.Text = string.Empty;
+                        continue;
                     }
                 }
                 
@@ -1259,9 +1269,6 @@ namespace ESSU
                     btn_playGame.PerformClick();
                 }
             }
-                
-            
-
         }
 
         void loadLib()
@@ -1582,6 +1589,12 @@ namespace ESSU
                 }
             }
             
+        }
+
+        private void bookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm_bookmarks = new Bookmarks();
+            if (!frm_bookmarks.Visible) frm_bookmarks.Show();
         }
     }
 }

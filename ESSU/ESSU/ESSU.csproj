@@ -78,6 +78,12 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bookmarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookmarks.Designer.cs">
+      <DependentUpon>Bookmarks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
       <DependentUpon>Settings Window.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Bookmarks.resx">
+      <DependentUpon>Bookmarks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
       <SubType>Designer</SubType>
