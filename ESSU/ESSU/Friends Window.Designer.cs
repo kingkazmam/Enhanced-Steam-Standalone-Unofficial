@@ -59,18 +59,21 @@ namespace ESSU
             // btn_min
             // 
             this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_min.BackgroundImage = global::ESSU.Properties.Resources.win32_win_min;
+            this.btn_min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_min.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_min.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(36)))), ((int)(((byte)(226)))));
             this.btn_min.FlatAppearance.BorderSize = 0;
             this.btn_min.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(422, 0);
+            this.btn_min.Location = new System.Drawing.Point(419, 0);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(30, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 40);
             this.btn_min.TabIndex = 2;
-            this.btn_min.Text = "0";
-            this.btn_min.UseVisualStyleBackColor = true;
+            this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
             // 
             // panel_topbar
@@ -95,25 +98,28 @@ namespace ESSU
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 30);
+            this.label1.Size = new System.Drawing.Size(109, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "FRIENDS";
             // 
             // btn_exit
             // 
             this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_exit.BackgroundImage = global::ESSU.Properties.Resources.win32_win_close;
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(36)))), ((int)(((byte)(226)))));
             this.btn_exit.FlatAppearance.BorderSize = 0;
             this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_exit.Location = new System.Drawing.Point(458, 0);
+            this.btn_exit.Location = new System.Drawing.Point(459, 0);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 40);
+            this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 0;
-            this.btn_exit.Text = "r";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // panel_body
@@ -143,16 +149,15 @@ namespace ESSU
             // resize
             // 
             this.resize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.resize.AutoSize = true;
             this.resize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.resize.Cursor = System.Windows.Forms.Cursors.SizeNWSE;
             this.resize.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resize.ForeColor = System.Drawing.Color.White;
-            this.resize.Location = new System.Drawing.Point(469, 380);
+            this.resize.Image = global::ESSU.Properties.Resources.resizer;
+            this.resize.Location = new System.Drawing.Point(470, 385);
             this.resize.Name = "resize";
-            this.resize.Size = new System.Drawing.Size(39, 32);
+            this.resize.Size = new System.Drawing.Size(43, 36);
             this.resize.TabIndex = 5;
-            this.resize.Text = "::";
             this.resize.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.resize.MouseDown += new System.Windows.Forms.MouseEventHandler(this.resize_MouseDown);
             this.resize.MouseMove += new System.Windows.Forms.MouseEventHandler(this.resize_MouseMove);
@@ -174,7 +179,6 @@ namespace ESSU
             this.panel_topbar.ResumeLayout(false);
             this.panel_topbar.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

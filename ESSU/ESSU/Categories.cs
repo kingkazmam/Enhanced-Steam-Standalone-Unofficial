@@ -65,14 +65,18 @@ namespace ESSU
         private void btn_exit_Click(object sender, EventArgs e)
         {
             string info = "";
-            foreach (string item in list_games.Items)
+            try
             {
-                info = info + item + Environment.NewLine;
-            }
-            if (info != "")
-            {
-                File.WriteAllText(Application.StartupPath + "\\c.dat", info);
-            }
+                foreach (string item in list_games.Items)
+                {
+                    info = info + item + Environment.NewLine;
+                }
+                if (info != "")
+                {
+                    File.WriteAllText(Application.StartupPath + "\\c.dat", info);
+                }
+                
+            } catch { }
             Settings.tempName = "startRefresh";
             this.Close();
         }
@@ -162,7 +166,7 @@ namespace ESSU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (list_games.SelectedIndex == -1) return;
             foreach (string line in File.ReadAllLines(Application.StartupPath + "\\c.dat"))
             {
                 if (!(line.Length > 0)) continue;

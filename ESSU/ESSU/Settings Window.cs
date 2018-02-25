@@ -180,6 +180,16 @@ namespace ESSU
             Process.Start("http://steamcommunity.com/profiles/76561198373212815");
         }
 
+        private void btn_music_add_Click(object sender, EventArgs e)
+        {
+            folder.ShowDialog();
+            if (Directory.Exists(folder.SelectedPath) && folder.SelectedPath.EndsWith("steamapps") && !list_music.Items.Contains(folder.SelectedPath)) { list_music.Items.Add(folder.SelectedPath); }
+            else { MessageBox.Show("Directory doesn't exist, invalid, or is already selected."); }
+        }
 
+        private void btn_music_remove_Click(object sender, EventArgs e)
+        {
+            if (list_music.SelectedIndex != -1) list_music.Items.RemoveAt(list_music.SelectedIndex);
+        }
     }
 }

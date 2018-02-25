@@ -82,7 +82,7 @@ namespace ESSU
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 17);
+            this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Add or Launch a Bookmark";
             // 
@@ -93,42 +93,49 @@ namespace ESSU
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 30);
+            this.label1.Size = new System.Drawing.Size(132, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Bookmarks";
             // 
             // btn_min
             // 
             this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_min.BackgroundImage = global::ESSU.Properties.Resources.win32_win_min;
+            this.btn_min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_min.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_min.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(36)))), ((int)(((byte)(226)))));
             this.btn_min.FlatAppearance.BorderSize = 0;
             this.btn_min.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(411, 0);
+            this.btn_min.Location = new System.Drawing.Point(399, 0);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(30, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 40);
             this.btn_min.TabIndex = 5;
-            this.btn_min.Text = "0";
-            this.btn_min.UseVisualStyleBackColor = true;
+            this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
             // 
             // btn_exit
             // 
             this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_exit.BackgroundImage = global::ESSU.Properties.Resources.win32_win_close;
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(36)))), ((int)(((byte)(226)))));
             this.btn_exit.FlatAppearance.BorderSize = 0;
-            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.btn_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_exit.Location = new System.Drawing.Point(447, 0);
+            this.btn_exit.Location = new System.Drawing.Point(439, 0);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(30, 40);
+            this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 6;
-            this.btn_exit.Text = "r";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // list_bookmarks
@@ -138,7 +145,7 @@ namespace ESSU
             this.list_bookmarks.ForeColor = System.Drawing.Color.White;
             this.list_bookmarks.FormattingEnabled = true;
             this.list_bookmarks.IntegralHeight = false;
-            this.list_bookmarks.ItemHeight = 20;
+            this.list_bookmarks.ItemHeight = 23;
             this.list_bookmarks.Location = new System.Drawing.Point(12, 61);
             this.list_bookmarks.Name = "list_bookmarks";
             this.list_bookmarks.Size = new System.Drawing.Size(456, 250);
@@ -148,15 +155,16 @@ namespace ESSU
             // 
             // txt_url
             // 
-            this.txt_url.Location = new System.Drawing.Point(70, 348);
+            this.txt_url.Location = new System.Drawing.Point(71, 348);
             this.txt_url.Name = "txt_url";
-            this.txt_url.Size = new System.Drawing.Size(295, 25);
+            this.txt_url.Size = new System.Drawing.Size(295, 27);
             this.txt_url.TabIndex = 1;
             // 
             // btn_add
             // 
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_add.Location = new System.Drawing.Point(371, 317);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(97, 25);
@@ -167,9 +175,9 @@ namespace ESSU
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(70, 317);
+            this.txt_name.Location = new System.Drawing.Point(71, 317);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(295, 25);
+            this.txt_name.Size = new System.Drawing.Size(295, 27);
             this.txt_name.TabIndex = 0;
             // 
             // label3
@@ -177,9 +185,9 @@ namespace ESSU
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 314);
+            this.label3.Location = new System.Drawing.Point(7, 314);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 30);
+            this.label3.Size = new System.Drawing.Size(61, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "Title";
             // 
@@ -188,16 +196,17 @@ namespace ESSU
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 341);
+            this.label4.Location = new System.Drawing.Point(10, 341);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 30);
+            this.label4.Size = new System.Drawing.Size(56, 32);
             this.label4.TabIndex = 9;
             this.label4.Text = "URL";
             // 
             // btn_remove
             // 
             this.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_remove.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_remove.Location = new System.Drawing.Point(371, 348);
             this.btn_remove.Name = "btn_remove";
             this.btn_remove.Size = new System.Drawing.Size(97, 25);
@@ -208,7 +217,7 @@ namespace ESSU
             // 
             // Bookmarks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(480, 380);

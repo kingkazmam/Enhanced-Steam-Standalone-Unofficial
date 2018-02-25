@@ -54,11 +54,11 @@ namespace ESSULauncher
             {
                 string html = taskHtml.Result;
                 if (!html.Contains("mainLoginPanel"))
-                {
-                    File.WriteAllText(Application.StartupPath + "\\library.txt", html);
+                {  
                     try
                     {
-                        Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
+                        File.WriteAllText(Application.StartupPath + "\\library.txt", html);
+                        if (!File.Exists(Application.StartupPath + "\\es.su")) Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
                     }
                     catch { }
                     Application.Exit();
@@ -74,7 +74,13 @@ namespace ESSULauncher
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (File.Exists(Application.StartupPath + "\\es.su"))
+            {
+                this.SendToBack();
+                this.ShowInTaskbar = false;
+            }
             
+
         }
     }
 }

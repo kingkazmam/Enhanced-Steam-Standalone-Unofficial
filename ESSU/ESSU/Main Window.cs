@@ -33,11 +33,13 @@ using System.Net;
 using CefSharp;
 using CefSharp.WinForms;
 using System.Drawing.Imaging;
+using System.Net.Sockets;
 
 namespace ESSU
 {
     public partial class Main_Window : Form
     {
+        int lastSelected = 0;
         private Bitmap ChangeBrightness(Bitmap image, int alpha)
         {
             Bitmap output = new Bitmap(image);
@@ -50,11 +52,8 @@ namespace ESSU
                     output.SetPixel(x, y, Color.FromArgb(alpha, color.R, color.G, color.B));
                 }
             }
-
             return output;
         }
-
-
 
         void loadImage(string appid)
         {
@@ -103,6 +102,7 @@ namespace ESSU
         static readonly int GWL_STYLE = -16;
         static readonly int WS_VISIBLE = 0x10000000;
         Process vivaldi;
+
         public Main_Window()
         {
             InitializeComponent();
@@ -143,16 +143,51 @@ namespace ESSU
 
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
+            context_menu.Renderer = new MyRenderer();
+            context_notification.Renderer = new MyRenderer();
+            context_community.Renderer = new MyRenderer();
+            context_gameMenu.Renderer = new MyRenderer();
+            context_profile.Renderer = new MyRenderer();
+            context_store.Renderer = new MyRenderer();
+            context_tray.Renderer = new MyRenderer();
+
             steamGameListUpdate();
             try
             {
                 loadImage(gameArray[list_games.SelectedIndex, 0]);
             }
             catch { }
+            
+        }
+
+        private class MyRenderer : ToolStripProfessionalRenderer
+        {
+            public MyRenderer() : base(new MyColors()) { }
+        }
+
+        private class MyColors : ProfessionalColorTable
+        {
+            public override Color MenuItemSelected
+            {
+                get { return Color.FromArgb(255, 102, 36, 226); }
+            }
+            public override Color ImageMarginGradientBegin
+            {
+                get { return Color.FromArgb(255, 26, 26, 26); }
+            }
+            public override Color ImageMarginGradientMiddle
+            {
+                get { return Color.FromArgb(255, 26, 26, 26); }
+            }
+            public override Color ImageMarginGradientEnd
+            {
+                get { return Color.FromArgb(255, 26, 26, 26); }
+            }
         }
 
         private void list_games_DrawItem(object sender, DrawItemEventArgs e)
         {
+            //list_games.ItemHeight = 22;
             SolidBrush reportsForegroundBrushSelected = new SolidBrush(Color.FromArgb(255, 255, 255, 255));
             SolidBrush reportsForegroundBrush = new SolidBrush(Color.White);
             SolidBrush reportsForegroundBrush2 = new SolidBrush(Color.Gray);
@@ -176,8 +211,6 @@ namespace ESSU
                         isInstalled = gameArray[x, 4] != null;
                     }
                 }
-
-                
                 Graphics g = e.Graphics;
 
                 //background:
@@ -190,24 +223,23 @@ namespace ESSU
 
 
                 g.FillRectangle(backgroundBrush, e.Bounds);
-
                 //text:
                 SolidBrush foregroundBrush = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush;
                 SolidBrush foregroundBrush2 = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush2;
                 SolidBrush foregroundBrush3 = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush3;
                 if (list_games.Items[index].ToString().StartsWith("▶ ") || list_games.Items[index].ToString().StartsWith("▼ "))
                 {
-                    g.DrawString(text, e.Font, foregroundBrush3, list_games.GetItemRectangle(index).Location);
+                    g.DrawString(text, e.Font, foregroundBrush3, e.Bounds);
                 }
                 else
                 {
                     if (isInstalled)
                     {
-                        g.DrawString(text, e.Font, foregroundBrush, list_games.GetItemRectangle(index).Location);
+                        g.DrawString(text, e.Font, foregroundBrush, e.Bounds);
                     }
                     else
                     {
-                        g.DrawString(text, e.Font, foregroundBrush2, list_games.GetItemRectangle(index).Location);
+                        g.DrawString(text, e.Font, foregroundBrush2, e.Bounds);
                     }
                 }
 
@@ -227,18 +259,18 @@ namespace ESSU
                     catch { }
                 }
             }
-
             panel_browser.Left = 0;
             panel_browser.BringToFront();
-            vivaldi = Process.Start("vivaldi.exe", url);
+            vivaldi = Process.Start("vivaldi.exe", "--force-renderer-accessibility " + url);
             while (vivaldi.MainWindowHandle == (IntPtr)0) { };
             SetParent(vivaldi.MainWindowHandle, panel_browser.Handle);
             SetWindowLong(vivaldi.MainWindowHandle, GWL_STYLE, WS_VISIBLE);
-
+            
         }
 
         private void refresh_Tick(object sender, EventArgs e)
         {
+            if (list_games.SelectedIndex == -1) list_games.SelectedIndex = lastSelected;
             int[] index = new int[list_games.Items.Count];
             if (Settings.tempName == "startRefresh")
             {
@@ -262,17 +294,15 @@ namespace ESSU
                 Settings.bookmarkGOTO = string.Empty;
             }
 
-            if (this.Width == this.MinimumSize.Width && picture_game_preview.Width != 494) picture_game_preview.Width = 494;
+            if (this.Width == this.MinimumSize.Width && picture_game_preview.Width != 619) picture_game_preview.Width = 619;
             if (list_games.SelectedIndex == -1) picture_game_preview.Image = null;
-
-            
 
             if (picture_game_preview.Height != Math.Round(picture_game_preview.Width * 0.4673913043478261)) picture_game_preview.Height = (int)Math.Round(picture_game_preview.Width * 0.4673913043478261);
 
             if (File.Exists(Application.StartupPath + "\\es.su")) { File.Delete(Application.StartupPath + "\\es.su"); this.Show(); this.WindowState = FormWindowState.Normal; }
 
 
-            try { MoveWindow(vivaldi.MainWindowHandle, 0, -25, panel_browser.Width, panel_browser.Height + 25, true); } catch { }
+            try { MoveWindow(vivaldi.MainWindowHandle, 0, -28, panel_browser.Width, panel_browser.Height + 25, true); } catch { }
         }
 
         Point mousePos = new Point(0, 0);
@@ -290,7 +320,7 @@ namespace ESSU
 
                 if (WindowState == FormWindowState.Maximized)
                 {
-                    btn_Max.Text = "1";
+                    btn_Max.BackgroundImage = ESSU.Properties.Resources.win32_win_max;
                     WindowState = FormWindowState.Normal;
                 }
             }
@@ -320,6 +350,7 @@ namespace ESSU
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            
             WindowState = FormWindowState.Minimized;
             Hide();
         }
@@ -333,12 +364,12 @@ namespace ESSU
         {
             if (WindowState == FormWindowState.Normal)
             {
-                btn_Max.Text = "2";
+                btn_Max.BackgroundImage = ESSU.Properties.Resources.win32_win_restore;
                 WindowState = FormWindowState.Maximized;
             }
             else
             {
-                btn_Max.Text = "1";
+                btn_Max.BackgroundImage = ESSU.Properties.Resources.win32_win_max;
                 WindowState = FormWindowState.Normal;
                 this.Size = new Size(1011, 680);
             }
@@ -348,12 +379,12 @@ namespace ESSU
         {
             if (WindowState == FormWindowState.Normal)
             {
-                btn_Max.Text = "2";
+                btn_Max.BackgroundImage = ESSU.Properties.Resources.win32_win_restore;
                 WindowState = FormWindowState.Maximized;
             }
             else
             {
-                btn_Max.Text = "1";
+                btn_Max.BackgroundImage = ESSU.Properties.Resources.win32_win_max;
                 WindowState = FormWindowState.Normal;
             }
         }
@@ -393,8 +424,7 @@ namespace ESSU
         private void btn_menu_Click(object sender, EventArgs e)
         {
             Control c = sender as Control;
-            if (!context_menu.Visible) context_menu.Show(c, new Point(c.Width, c.Height / 2));
-            else context_menu.Hide();
+            if (!context_menu.Visible) context_menu.Show(c, new Point(2, c.Height + 2));
         }
         /// <summary>
         /// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -435,7 +465,7 @@ namespace ESSU
                         }
                     }
                     string Sname = name;
-                    if (Sname.Length > 45) { Sname = name.Substring(0, 45) + "..."; }
+                    if (Sname.Length > 35) { Sname = name.Substring(0, 35) + "..."; }
                     gameArray[orgindex, 0] = Sname;
                     gameArray[orgindex, 1] = appid;
                     gameArray[orgindex, 2] = installdir;
@@ -481,6 +511,7 @@ namespace ESSU
                     list_games.Items.Add(gameArray[i, 0]);
                 }
             }
+            
             //if (list_games.Items.Count >= 0) list_games.SelectedIndex = 0;
         }
 
@@ -504,6 +535,7 @@ namespace ESSU
 
         private void btn_playGame_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 if (list_games.SelectedIndex == -1) return;
@@ -517,6 +549,7 @@ namespace ESSU
                 }
             } catch { }
             
+
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
@@ -567,15 +600,19 @@ namespace ESSU
 
         private void btn_LocalFiles_Click(object sender, EventArgs e)
         {
-            if (list_games.SelectedIndex == -1) return;
-            for (int i = 0; i < maxGames; i++)
+            try
             {
-                if (String.IsNullOrEmpty(gameArray[i, 0])) continue;
-                if (list_games.SelectedItem.ToString() == gameArray[i, 0])
+                if (list_games.SelectedIndex == -1) return;
+                for (int i = 0; i < maxGames; i++)
                 {
-                    Process.Start(@gameArray[i, 2]);
+                    if (String.IsNullOrEmpty(gameArray[i, 0])) continue;
+                    if (list_games.SelectedItem.ToString() == gameArray[i, 0])
+                    {
+                        Process.Start(@gameArray[i, 2]);
+                    }
                 }
-            }
+            } catch { }
+            
         }
 
         private void btn_friendsThatPlay_Click(object sender, EventArgs e)
@@ -694,6 +731,8 @@ namespace ESSU
 
         private void txt_searchForGame_KeyUp(object sender, KeyEventArgs e)
         {
+            if (txt_searchForGame.Text != string.Empty) btn_erase_Text.Visible = true;
+            else btn_erase_Text.Visible = false;
             string cat = "▼".ToLower();
             foreach (var item in list_games.Items)
             {
@@ -859,7 +898,7 @@ namespace ESSU
         private void btn_notifications_Click(object sender, EventArgs e)
         {
             Control c = sender as Control;
-            if (!context_notification.Visible) context_notification.Show(c, new Point(-context_menu.Width - c.Width / 2, c.Height));
+            if (!context_notification.Visible) context_notification.Show(c, new Point( c.Width - context_notification.Width, c.Height));
             else context_notification.Hide();
         }
 
@@ -905,33 +944,38 @@ namespace ESSU
 
         private void list_games_MouseDown(object sender, MouseEventArgs e)
         {
-            
-            list_games.SelectedIndex = list_games.IndexFromPoint(e.X, e.Y);
-            if (list_games.SelectedIndex == -1) return;
-            if (e.Button == MouseButtons.Right && !list_games.SelectedItem.ToString().StartsWith("▼ ") && !list_games.SelectedItem.ToString().StartsWith("▶ "))
+            if (e.Button == MouseButtons.Right)
             {
-                context_gameMenu.Show(Cursor.Position);
-            }
-            try
-            {
-                if (list_games.SelectedItem.ToString().StartsWith("▼ ") || list_games.SelectedItem.ToString().StartsWith("▶ "))
+                list_games.SelectedIndex = list_games.IndexFromPoint(e.X, e.Y);
+                if (list_games.SelectedIndex == -1) return;
+                if (e.Button == MouseButtons.Right && !list_games.SelectedItem.ToString().StartsWith("▼ ") && !list_games.SelectedItem.ToString().StartsWith("▶ "))
                 {
-                    try
-                    {
-                        if (list_games.SelectedItem.ToString().StartsWith("▶ "))
-                        {
-                            list_games.Items[list_games.SelectedIndex] = list_games.SelectedItem.ToString().Replace("▶ ", "▼ ");
-                            showCate();
-                        }
-                        else if (list_games.SelectedItem.ToString().StartsWith("▼ "))
-                        {
-                            list_games.Items[list_games.SelectedIndex] = list_games.SelectedItem.ToString().Replace("▼ ", "▶ ");
-                            showCate();
-                        }
-                    }
-                    catch { }
+                    context_gameMenu.Show(Cursor.Position);
                 }
-            } catch { }
+                try
+                {
+                    if (list_games.SelectedItem.ToString().StartsWith("▼ ") || list_games.SelectedItem.ToString().StartsWith("▶ "))
+                    {
+                        try
+                        {
+                            if (list_games.SelectedItem.ToString().StartsWith("▶ "))
+                            {
+                                list_games.Items[list_games.SelectedIndex] = list_games.SelectedItem.ToString().Replace("▶ ", "▼ ");
+                                showCate();
+                            }
+                            else if (list_games.SelectedItem.ToString().StartsWith("▼ "))
+                            {
+                                list_games.Items[list_games.SelectedIndex] = list_games.SelectedItem.ToString().Replace("▼ ", "▶ ");
+                                showCate();
+                            }
+                        }
+                        catch { }
+                    }
+                }
+                catch { }
+            }
+            
+            
             
         }
 
@@ -1200,8 +1244,11 @@ namespace ESSU
             Application.Exit();
         }
 
+        bool Installed = false;
+
         private void list_games_SelectedIndexChanged(object sender, EventArgs e)
-        { 
+        {
+            if (list_games.SelectedIndex != -1) lastSelected = list_games.SelectedIndex;
             if (list_games.SelectedIndex == -1) 
             {
                 picture_game_preview.Image = null;
@@ -1217,8 +1264,10 @@ namespace ESSU
                     {
                         loadImage(gameArray[i, 1]);
                         lbl_gameTitle.Text = gameArray[i, 3];
-                        if (!string.IsNullOrEmpty(gameArray[i, 2])) { btn_playGame.Text = "▶"; btn_playGame.Font = new Font("Segoe UI", 16); }
-                        else { btn_playGame.Text = "⬇"; btn_playGame.Font = new Font("Segoe UI", 20); }
+                        if (!string.IsNullOrEmpty(gameArray[i, 2])) { btn_playGame.BackgroundImage = ESSU.Properties.Resources.play; Installed = true; label8.Text = "\n               Play Game"; }
+                        else { btn_playGame.BackgroundImage = ESSU.Properties.Resources.install; Installed = false; label8.Text = "\n               Install Game"; }
+
+                       
                         return;   
                     }
                     else
@@ -1335,7 +1384,7 @@ namespace ESSU
                 if (String.IsNullOrEmpty(webGameArray[y, 0])) continue;
 
                 string Sname = webGameArray[y, 1];
-                if (Sname.Length > 36) Sname = webGameArray[y, 1].Substring(0, 36) + "...";
+                if (Sname.Length > 35) Sname = webGameArray[y, 1].Substring(0, 35) + "...";
 
                 gameArray[orgindex, 0] = Sname;
                 gameArray[orgindex, 1] = webGameArray[y, 0];
@@ -1479,9 +1528,22 @@ namespace ESSU
 
         private void frm_main_Load_1(object sender, EventArgs e)
         {
+            foreach (string line in File.ReadAllLines(Application.StartupPath + "\\library.txt"))
+            {
+                if (line.Contains("<title>"))
+                {
+                    string l = line;
+                    l = l.Replace("<title>Steam Community :: ", string.Empty);
+                    l = l.Replace(" :: Games</title>", string.Empty);
+                    if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
+                    btn_user.Text = l;
+                }
+            }
+            //btn_user.Text = 
             this.BringToFront();
             this.Size = this.MinimumSize;
             picture_game_preview.Width = 494;
+            //Process.Start(Application.StartupPath + "\\ESSULauncher.exe");
         }
 
         private void list_games_Click(object sender, EventArgs e)
@@ -1596,6 +1658,197 @@ namespace ESSU
             Form frm_bookmarks = new Bookmarks();
             if (!frm_bookmarks.Visible) frm_bookmarks.Show();
         }
+
+        private void btn_playGame_MouseEnter(object sender, EventArgs e)
+        {
+            if (!Installed)
+            {
+                btn_playGame.BackgroundImage = ESSU.Properties.Resources.install_h;
+            }
+            else 
+            {
+                btn_playGame.BackgroundImage = ESSU.Properties.Resources.play_h;
+            }
+        }
+
+        private void btn_playGame_MouseLeave(object sender, EventArgs e)
+        {
+            if (!Installed)
+            {
+                btn_playGame.BackgroundImage = ESSU.Properties.Resources.install;
+            }
+            else
+            {
+                btn_playGame.BackgroundImage = ESSU.Properties.Resources.play;
+            }
+        }
+
+        private void btn_playGame_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (Installed) btn_playGame.BackgroundImage = ESSU.Properties.Resources.play_p;
+            else btn_playGame.BackgroundImage = ESSU.Properties.Resources.install_p;
+        }
+
+        private void btn_playGame_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (Installed) btn_playGame.BackgroundImage = ESSU.Properties.Resources.play;
+            else btn_playGame.BackgroundImage = ESSU.Properties.Resources.install;
+        }
+
+        private void btn_erase_Text_Click(object sender, EventArgs e)
+        {
+            txt_searchForGame.Text = "";
+            btn_erase_Text.Visible = false;
+        }
+
+        private void btn_friendsThatPlay_MouseEnter(object sender, EventArgs e)
+        {
+            btn_friendsThatPlay.BackgroundImage = ESSU.Properties.Resources.friends_h;
+        }
+
+        private void btn_friendsThatPlay_MouseLeave(object sender, EventArgs e)
+        {
+            btn_friendsThatPlay.BackgroundImage = ESSU.Properties.Resources.friends;
+        }
+
+        private void btn_friendsThatPlay_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_friendsThatPlay.BackgroundImage = ESSU.Properties.Resources.friends_p;
+        }
+
+        private void btn_friendsThatPlay_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_friendsThatPlay.BackgroundImage = ESSU.Properties.Resources.friends;
+        }
+
+        private void btn_news_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_news.BackgroundImage = ESSU.Properties.Resources.news_p;
+        }
+
+        private void btn_news_MouseEnter(object sender, EventArgs e)
+        {
+            btn_news.BackgroundImage = ESSU.Properties.Resources.news_h;
+        }
+
+        private void btn_news_MouseLeave(object sender, EventArgs e)
+        {
+            btn_news.BackgroundImage = ESSU.Properties.Resources.news;
+        }
+
+        private void btn_news_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_news.BackgroundImage = ESSU.Properties.Resources.news;
+        }
+
+        private void btn_workshop_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop_p;
+        }
+
+        private void btn_workshop_MouseEnter(object sender, EventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop_h;
+        }
+
+        private void btn_workshop_MouseLeave(object sender, EventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void btn_workshop_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void label4_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void label4_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_workshop.BackgroundImage = ESSU.Properties.Resources.workshop;
+        }
+
+        private void btn_achieve_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_achieve.BackgroundImage = ESSU.Properties.Resources.achievements_p;
+        }
+
+        private void btn_achieve_MouseEnter(object sender, EventArgs e)
+        {
+            btn_achieve.BackgroundImage = ESSU.Properties.Resources.achievements_h;
+        }
+
+        private void btn_achieve_MouseLeave(object sender, EventArgs e)
+        {
+            btn_achieve.BackgroundImage = ESSU.Properties.Resources.achievements;
+        }
+
+        private void btn_achieve_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_achieve.BackgroundImage = ESSU.Properties.Resources.achievements;
+        }
+
+        private void Main_Window_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.ApplicationExitCall:
+                    notifyMe.Visible = false;
+                    break;
+                case CloseReason.TaskManagerClosing:
+                    notifyMe.Visible = false;
+                    break;
+                case CloseReason.UserClosing:
+                    notifyMe.Visible = false;
+                    break;
+                case CloseReason.WindowsShutDown:
+                    notifyMe.Visible = false;
+                    break;
+
+            }
+        }
+
+        private void screenshotsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setActiveFromPanel(btn_user, btn_Store, btn_library, btn_commuity);
+            launchVivaldi("http://steamcommunity.com/my/screenshots/");
+        }
+
+        private void playersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setActiveFromPanel(btn_user, btn_Store, btn_library, btn_commuity);
+            launchVivaldi("http://steamcommunity.com/my/friends/coplay/");
+        }
+
+        private void redeemASteamWalletCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setActiveFromPanel(btn_Store, btn_user, btn_library, btn_commuity);
+            launchVivaldi("http://store.steampowered.com/account/redeemwalletcode/");
+        }
+
+        private void steamSupportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setActiveFromPanel(btn_Store, btn_user, btn_library, btn_commuity);
+            launchVivaldi("https://help.steampowered.com/en/");
+        }
+
+        private void reviewsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setActiveFromPanel(btn_user, btn_Store, btn_library, btn_commuity);
+            launchVivaldi("http://steamcommunity.com/my/recommended");
+        }
     }
 }
-/**/

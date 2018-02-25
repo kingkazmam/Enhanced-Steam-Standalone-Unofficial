@@ -7,7 +7,7 @@
 
 	<link href="http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=Sd0odMs2NjL1" rel="stylesheet" type="text/css">
 <link href="http://steamcommunity-a.akamaihd.net/public/shared/css/buttons.css?v=FMXZx9fv9yp_" rel="stylesheet" type="text/css">
-<link href="http://steamcommunity-a.akamaihd.net/public/shared/css/shared_global.css?v=W1HKWEcSAl6I" rel="stylesheet" type="text/css">
+<link href="http://steamcommunity-a.akamaihd.net/public/shared/css/shared_global.css?v=vYmWh8a4djLD" rel="stylesheet" type="text/css">
 <link href="http://steamcommunity-a.akamaihd.net/public/css/globalv2.css?v=9MX393FjLZd_" rel="stylesheet" type="text/css">
 <link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/profilev2.css?v=N-o_OmTeTC4p" rel="stylesheet" type="text/css">
 <link href="http://steamcommunity-a.akamaihd.net/public/css/skin_1/profile_sharedfiles.css?v=HOoZmti2IhQE" rel="stylesheet" type="text/css">
@@ -33,12 +33,14 @@
 <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/scriptaculous/_combined.js?v=9XVsa_Ni33oN&amp;l=english&amp;load=effects,controls,slider,dragdrop"></script>
 <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/global.js?v=U5U2zSMV27d8&amp;l=english"></script>
 <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/jquery-1.11.1.min.js?v=.isFTSRckeNhC"></script>
-<script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/tooltip.js?v=.wm5d-ILLg4Uk"></script>
+<script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/tooltip.js?v=.xs9Mp4SqnJyC"></script>
 <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=lowcsfRxAixS&amp;l=english"></script>
 <script type="text/javascript">$J = jQuery.noConflict();
 if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( "<scr" + "ipt type=\"text\/javascript\" src=\"http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;l=english\" ><\/script>\n" ); };
 </script><script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/javascript/profile_gameslist_functions.js?v=uubNf4d50Gnb&amp;l=english"></script>
 <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_responsive_adapter.js?v=qLEcRmcHn-kc&amp;l=english"></script>
+
+		<meta property="og:title" content="Steam Community :: ダーク :: Games">
 
 	
 						<meta property="fb:app_id" content="105386699540688">
@@ -61,17 +63,17 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 						<div class="mainmenu_contents_items">
 															<!-- profile area -->
 								<div class="responsive_menu_user_area">
-									<div class="responsive_menu_user_persona persona offline">
-										<div class="playerAvatar offline">
+									<div class="responsive_menu_user_persona persona online">
+										<div class="playerAvatar online">
 											<a href="http://steamcommunity.com/id/darcphansea/">
 												<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3ff5838f13fef797b44ffe3b85bc3e6ce9e9fef1.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3ff5838f13fef797b44ffe3b85bc3e6ce9e9fef1.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3ff5838f13fef797b44ffe3b85bc3e6ce9e9fef1_medium.jpg 2x">											</a>
 										</div>
 										<a href="http://steamcommunity.com/id/darcphansea/" data-miniprofile="412947087">ダーク</a>									</div>
 
-																												<div class="responsive_menu_cartwallet_area persona offline">
+																												<div class="responsive_menu_cartwallet_area persona online">
 																																		<div class="responsive_menu_user_wallet">
 													<a href="https://store.steampowered.com/account/">
-														Wallet <b>($1.49)</b>													</a>
+														Wallet <b>($0.01)</b>													</a>
 												</div>
 																					</div>
 																	</div>
@@ -376,17 +378,17 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 						RegisterFlyout( 'account_language_pulldown', 'language_dropdown', 'leftsubmenu', 'bottomsubmenu', true );
 					</script>
 											<div id="header_wallet_ctn">
-							<a class="global_action_link" id="header_wallet_balance" href="https://store.steampowered.com/account/store_transactions/">$1.49</a>
+							<a class="global_action_link" id="header_wallet_balance" href="https://store.steampowered.com/account/store_transactions/">$0.01</a>
 						</div>
 												</div>
-							<a href="http://steamcommunity.com/id/darcphansea/" class="user_avatar playerAvatar offline">
+							<a href="http://steamcommunity.com/id/darcphansea/" class="user_avatar playerAvatar online">
 					<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3ff5838f13fef797b44ffe3b85bc3e6ce9e9fef1.jpg">
 				</a>
 					</div>
 			</div>
 </div>
 <script type="text/javascript">
-	g_sessionID = "1dcbf586dddf32fb7f7bd393";
+	g_sessionID = "954613e83a6d8335ff101d28";
 	g_steamID = "76561198373212815";
 
 	// We always want to have the timezone cookie set for PHP to use
@@ -416,7 +418,7 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 					</div>
 		<a href="http://steamcommunity.com/id/darcphansea">
 			<div class="profile_small_header_avatar">
-				<div class="playerAvatar medium offline">
+				<div class="playerAvatar medium online">
 					<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3ff5838f13fef797b44ffe3b85bc3e6ce9e9fef1_medium.jpg">
 				</div>
 			</div>
@@ -436,7 +438,7 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 
 	<div class="nonresponsive_hidden responsive_tab_ctn sharedfiles_responsive_tab">
 		<div class="responsive_tab_control">
-						<select class="responsive_tab_select" id="responsive_tab_select5a7d08ada0a60">
+						<select class="responsive_tab_select" id="responsive_tab_select5a9242ed9adc7">
 									<option value="http://steamcommunity.com/id/darcphansea/games/?tab=recent">
 						Recently Played					</option>
 									<option value="http://steamcommunity.com/id/darcphansea/games/?tab=all" selected="">
@@ -457,10 +459,30 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		<div class="sectionTabsHR "><img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif"></div>
 	
 			<div id="tabs_basebg" class="games_list">
-																												<div id="gameslist_controls">
+																						<div id="clientConnBlock">
+								<div class="clientConnArea">
+			<div class="clientConnRightBlock">
+						<p class="clientConnHeaderText">Current Steam login</p>
+			<p class="clientConnMachineText">DarcPhansea <span class="clientConnMachineBar">|</span> PC</p>
+		</div>
+		<div class="clientConnMiddleBlock">
+						<p class="clientConnChangingText"></p>
+		</div>
+		<div id="clientConnGameBlocks" style="display:none">
+			<div class="thinBlackBorder" id="clientConnChangingGames">
+			</div>
+		</div>
+				<p id="clientError" class="clientConnStatusBlock" style="display:none">
+			<img class="clientConnStatusIcon" src="http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_ErrorWarning.png">
+			<span class="clientConnStatusText color_error">Unable to contact the server, please try again later</span>
+		</p>
+				<div style="clear: both;"></div>
+</div>
+							</div>
+																			<div id="gameslist_controls">
 								<div id="gameslist_sort_options" class="sort_options">
-									Sort by																														&nbsp;<a href="http://steamcommunity.com/id/darcphansea/games/?tab=all&amp;sort=playtime">Playtime</a>
-																																								&nbsp;<span class="selected_sort">Name</span>
+									Sort by																														&nbsp;<span class="selected_sort">Playtime</span>
+																																								&nbsp;<a href="http://steamcommunity.com/id/darcphansea/games/?tab=all&amp;sort=name">Name</a>
 																											</div>
 
 								Filter games <div class="gray_bevel for_text_input">
@@ -473,31 +495,38 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 					
 						<div id="games_list_row_container">
 							<div id="games_list_rows" style="position: relative">
-							<div class="gameListRow" id="game_102700"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/102700">
-		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/102700/e1bc8797f8e467969b607a3853cce866af32c8fa.jpg" id="delayedimage_game_logo_102700_0">
+							<div class="gameListRow gameListItemInstalled" id="game_440"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/440">
+		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/440/07385eb55b5ba974aebbe74d3c99626bda7920b8.jpg" id="delayedimage_game_logo_440_0">
 	</a>
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">85.3 MiB</p>
+	</div>
 	
-	<div class="gameListRowItemName ellipsis ">A.V.A. Alliance of Valiant Arms™</div>
-	<h5 class="ellipsis hours_played"></h5>
+</div>
+
+	<div class="gameListRowItemName ellipsis ">Team Fortress 2</div>
+	<h5 class="ellipsis hours_played">224 hrs on record</h5>
 
 	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_102700', 'left' );">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_440', 'left' );">
 			<div class="menu_ico">
 				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
 			</div>
 			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
 		</div>
 
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_102700', 'right' );">
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_440', 'right' );">
 		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
 		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
 	</div>
 
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/102700">
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/440">
 				<div class="menu_ico">
 					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
 				</div>
@@ -505,14 +534,99 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_362890"><div class="gameListRowLogo">
+</div><div class="gameListRow gameListItemInstalled" id="game_730"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/730">
+		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/730/d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg" id="delayedimage_game_logo_730_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">0.0 B</p>
+	</div>
+	
+</div>
+
+	<div class="gameListRowItemName ellipsis ">Counter-Strike: Global Offensive</div>
+	<h5 class="ellipsis hours_played">122 hrs on record</h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_730', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_730', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/730">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow gameListItemInstalled" id="game_578080"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/578080">
+		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/578080/2d2732a33511b58c69aff6b098a22687a3bb8533.jpg" id="delayedimage_game_logo_578080_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">25.3 MiB</p>
+	</div>
+	
+</div>
+
+	<div class="gameListRowItemName ellipsis ">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
+	<h5 class="ellipsis hours_played">75 hrs on record</h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_578080', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_578080', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/578080">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow gameListItemInstalled" id="game_362890"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/362890">
 		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/362890/07165fb02e18a4cf544125c1bd350fe300aef362.jpg" id="delayedimage_game_logo_362890_0">
 	</a>
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">6.5 MiB</p>
+	</div>
 	
+</div>
+
 	<div class="gameListRowItemName ellipsis ">Black Mesa</div>
 	<h5 class="ellipsis hours_played">10.6 hrs on record</h5>
 
@@ -537,31 +651,151 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_730"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/730">
-		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/730/d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg" id="delayedimage_game_logo_730_0">
+</div><div class="gameListRow gameListItemInstalled" id="game_698780"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/698780">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_698780_0">
 	</a>
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">0.0 B</p>
+	</div>
 	
-	<div class="gameListRowItemName ellipsis ">Counter-Strike: Global Offensive</div>
-	<h5 class="ellipsis hours_played">121 hrs on record</h5>
+</div>
+
+	<div class="gameListRowItemName ellipsis ">Doki Doki Literature Club</div>
+	<h5 class="ellipsis hours_played">5.7 hrs on record</h5>
 
 	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_730', 'left' );">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_698780', 'left' );">
 			<div class="menu_ico">
 				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
 			</div>
 			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
 		</div>
 
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_730', 'right' );">
+			
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/698780">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow gameListItemInstalled" id="game_431960"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/431960">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_431960_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText ">Ready to play</p>
+		<p class="clientConnItemText ">0.0 B</p>
+	</div>
+	
+</div>
+
+	<div class="gameListRowItemName ellipsis ">Wallpaper Engine</div>
+	<h5 class="ellipsis hours_played">4.6 hrs on record</h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_431960', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_431960', 'right' );">
 		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
 		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
 	</div>
 
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/730">
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/431960">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow" id="game_550"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/550">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_550_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=550&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Left 4 Dead 2</div>
+	<h5 class="ellipsis hours_played">1.5 hrs on record</h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_550', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_550', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/550">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow" id="game_476460"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/476460">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_476460_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=476460&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Picross Touch</div>
+	<h5 class="ellipsis hours_played">1.5 hrs on record</h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_476460', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_476460', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/476460">
 				<div class="menu_ico">
 					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
 				</div>
@@ -571,13 +805,20 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 
 </div><div class="gameListRow" id="game_639790"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/639790">
-		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/639790/c575efe4bf738de5bcd18bca6bf9035d821e55ff.jpg" id="delayedimage_game_logo_639790_0">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_639790_0">
 	</a>
 </div>
 <div class="gameListRowItem">
 	
-	
-	<div class="gameListRowItemName ellipsis ">DEEP SPACE WAIFU</div>
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=639790&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">DEEP SPACE WAIFU</div>
 	<h5 class="ellipsis hours_played">0.4 hrs on record</h5>
 
 	<div class="bottom_controls">
@@ -601,34 +842,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_648930"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/648930">
-		<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/648930/e88bbe2937164c2a2d496798d319392e37f9252c.jpg" id="delayedimage_game_logo_648930_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Deep Space Waifu - OST</div>
-	<h5 class="ellipsis hours_played"></h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_648930', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-			
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/648930">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
 </div><div class="gameListRow" id="game_639780"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/639780">
 		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_639780_0">
@@ -636,8 +849,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
-	
-	<div class="gameListRowItemName ellipsis ">DEEP SPACE WAIFU: FLAT JUSTICE</div>
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=639780&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">DEEP SPACE WAIFU: FLAT JUSTICE</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -661,6 +881,158 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
+</div><div class="gameListRow" id="game_444090"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/444090">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_444090_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=444090&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Paladins</div>
+	<h5 class="ellipsis hours_played"></h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_444090', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_444090', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/444090">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow" id="game_422870"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/422870">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_422870_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=422870&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Super Duper Flying Genocide 2017</div>
+	<h5 class="ellipsis hours_played"></h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_422870', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_422870', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/422870">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow" id="game_102700"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/102700">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_102700_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=102700&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">A.V.A. Alliance of Valiant Arms™</div>
+	<h5 class="ellipsis hours_played"></h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_102700', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_102700', 'right' );">
+		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
+		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+	</div>
+
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/102700">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
+</div><div class="gameListRow" id="game_648930"><div class="gameListRowLogo">
+	<a href="http://steamcommunity.com/app/648930">
+		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_648930_0">
+	</a>
+</div>
+<div class="gameListRowItem">
+	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_disabled">This product cannot be controlled remotely</p>
+		<p class="clientConnItemText color_disabled"></p>
+	</div>
+	
+</div>
+
+	<div class="gameListRowItemName ellipsis color_disabled">Deep Space Waifu - OST</div>
+	<h5 class="ellipsis hours_played"></h5>
+
+	<div class="bottom_controls">
+		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_648930', 'left' );">
+			<div class="menu_ico">
+				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
+			</div>
+			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
+		</div>
+
+			
+			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/648930">
+				<div class="menu_ico">
+					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
+				</div>
+				Review...			</a>
+		</div>
+	</div>
+
 </div><div class="gameListRow" id="game_756280"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/756280">
 		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_756280_0">
@@ -668,8 +1040,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_disabled">This product cannot be controlled remotely</p>
+		<p class="clientConnItemText color_disabled"></p>
+	</div>
 	
-	<div class="gameListRowItemName ellipsis ">Deep Space Waifu: Flat Justice - Soundtrack</div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_disabled">Deep Space Waifu: Flat Justice - Soundtrack</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -696,8 +1075,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_disabled">This product cannot be controlled remotely</p>
+		<p class="clientConnItemText color_disabled"></p>
+	</div>
 	
-	<div class="gameListRowItemName ellipsis ">DEEP SPACE WAIFU ACADEMY</div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_disabled">DEEP SPACE WAIFU ACADEMY</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -717,98 +1103,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_698780"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/698780">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_698780_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Doki Doki Literature Club</div>
-	<h5 class="ellipsis hours_played">5.7 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_698780', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-			
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/698780">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
-</div><div class="gameListRow" id="game_550"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/550">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_550_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Left 4 Dead 2</div>
-	<h5 class="ellipsis hours_played">1.5 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_550', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_550', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/550">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
-</div><div class="gameListRow" id="game_444090"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/444090">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_444090_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Paladins</div>
-	<h5 class="ellipsis hours_played"></h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_444090', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_444090', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/444090">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
 </div><div class="gameListRow" id="game_596350"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/596350">
 		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_596350_0">
@@ -816,8 +1110,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
-	
-	<div class="gameListRowItemName ellipsis ">Paladins - Public Test</div>
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=596350&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Paladins - Public Test</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -837,134 +1138,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_476460"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/476460">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_476460_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Picross Touch</div>
-	<h5 class="ellipsis hours_played">1.5 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_476460', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_476460', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/476460">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
-</div><div class="gameListRow" id="game_578080"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/578080">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_578080_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
-	<h5 class="ellipsis hours_played">75 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_578080', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_578080', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/578080">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
-</div><div class="gameListRow" id="game_422870"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/422870">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_422870_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Super Duper Flying Genocide 2017</div>
-	<h5 class="ellipsis hours_played"></h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_422870', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_422870', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/422870">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
-</div><div class="gameListRow" id="game_440"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/440">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_440_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Team Fortress 2</div>
-	<h5 class="ellipsis hours_played">223 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_440', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_440', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/440">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
 </div><div class="gameListRow" id="game_520"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/520">
 		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_520_0">
@@ -972,8 +1145,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_disabled">This product cannot be controlled remotely</p>
+		<p class="clientConnItemText color_disabled"></p>
+	</div>
 	
-	<div class="gameListRowItemName ellipsis ">Team Fortress 2 Beta</div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_disabled">Team Fortress 2 Beta</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -993,38 +1173,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		</div>
 	</div>
 
-</div><div class="gameListRow" id="game_431960"><div class="gameListRowLogo">
-	<a href="http://steamcommunity.com/app/431960">
-		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_431960_0">
-	</a>
-</div>
-<div class="gameListRowItem">
-	
-	
-	<div class="gameListRowItemName ellipsis ">Wallpaper Engine</div>
-	<h5 class="ellipsis hours_played">2.8 hrs on record</h5>
-
-	<div class="bottom_controls">
-		<div class="pullup_item" onclick="ShowMenuCumulative( this, 'links_dropdown_431960', 'left' );">
-			<div class="menu_ico">
-				<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_www.png" width="16" height="16" border="0">
-			</div>
-			Links			<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-		</div>
-
-				<div class="pullup_item" onclick="ShowMenuCumulative( this, 'stats_dropdown_431960', 'right' );">
-		<div class="menu_ico"><img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_stats.png" width="16" height="16" border="0"></div>
-		View Stats<img src="http://steamcommunity-a.akamaihd.net/public/images/header/btn_arrow_down.png" border="0" class="menuarrow">
-	</div>
-
-			<a class="pullup_item" href="http://store.steampowered.com/recommended/recommendgame/431960">
-				<div class="menu_ico">
-					<img src="http://steamcommunity-a.akamaihd.net/public/images/skin_1/icon_rate.png" width="16" height="16" border="0">
-				</div>
-				Review...			</a>
-		</div>
-	</div>
-
 </div><div class="gameListRow" id="game_458960"><div class="gameListRowLogo">
 	<a href="http://steamcommunity.com/app/458960">
 		<img src="http://steamcommunity-a.akamaihd.net/public/images/trans.gif" id="delayedimage_game_logo_458960_0">
@@ -1032,8 +1180,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
-	
-	<div class="gameListRowItemName ellipsis ">Winning Putt: Golf Online</div>
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=458960&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Winning Putt: Golf Online</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -1064,8 +1219,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 <div class="gameListRowItem">
 	
-	
-	<div class="gameListRowItemName ellipsis ">Yume Nikki</div>
+	<div class="clientConnItemBlock">
+	<div class="clientConnItemTextBlock">
+		<p class="clientConnItemText color_uninstalled">Not installed</p>
+		<p class="clientConnItemText color_uninstalled">0.0 B</p>
+	</div>
+	<div class="clientConnItemIcon" style="background-image: url(http://steamcommunity-a.akamaihd.net/public/images/remote/Icon_RemoteInstallDefault.png);" onclick="DimButton(this, event, function() { DoXmlRequest(event, 'http://steamcommunity.com/remoteactions/modifyappstate', 'sessionid=954613e83a6d8335ff101d28&amp;appid=650700&amp;operation=install', function () { DelayRequestChangingGames(1000, 10); }, ShowClientError); } );"></div>
+</div>
+
+	<div class="gameListRowItemName ellipsis color_uninstalled">Yume Nikki</div>
 	<h5 class="ellipsis hours_played"></h5>
 
 	<div class="bottom_controls">
@@ -1111,13 +1273,13 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div>
 
 <script language="javascript">
-			var rgGames = [{"appid":102700,"name":"A.V.A. Alliance of Valiant Arms\u2122","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/102700\/e1bc8797f8e467969b607a3853cce866af32c8fa.jpg","friendly_name":"AllianceofValiantArms","friendlyURL":"AllianceofValiantArms","availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1499625400},{"appid":362890,"name":"Black Mesa","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/362890\/07165fb02e18a4cf544125c1bd350fe300aef362.jpg","friendlyURL":362890,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"10.6","last_played":1516609390},{"appid":730,"name":"Counter-Strike: Global Offensive","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg","friendly_name":"CSGO","friendlyURL":"CSGO","availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours":"0.3","hours_forever":"121","last_played":1518035190},{"appid":639790,"name":"DEEP SPACE WAIFU","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/639790\/c575efe4bf738de5bcd18bca6bf9035d821e55ff.jpg","has_adult_content":1,"friendlyURL":639790,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"0.4","last_played":1518042006},{"appid":648930,"name":"Deep Space Waifu - OST","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/648930\/e88bbe2937164c2a2d496798d319392e37f9252c.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":639780,"name":"DEEP SPACE WAIFU: FLAT JUSTICE","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/639780\/99ad33e4dccef4948c35754777d98c4aeecb8c2e.jpg","has_adult_content":1,"friendlyURL":639780,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1518053491},{"appid":756280,"name":"Deep Space Waifu: Flat Justice - Soundtrack","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/756280\/99ad33e4dccef4948c35754777d98c4aeecb8c2e.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":701531,"name":"DEEP SPACE WAIFU ACADEMY","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/701531\/d46a27f5190000a735fec01d9e7280dadef3f8a1.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":698780,"name":"Doki Doki Literature Club","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/698780\/76c3e09407e445568c9bb32d77bf364168ea45ed.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"5.7","last_played":1518041718},{"appid":550,"name":"Left 4 Dead 2","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/550\/205863cc21e751a576d6fff851984b3170684142.jpg","friendlyURL":"L4D2","availStatLinks":{"achievements":true,"global_achievements":true,"stats":true,"leaderboards":true,"global_leaderboards":false},"hours_forever":"1.5","last_played":1517781878},{"appid":444090,"name":"Paladins","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/444090\/a4bdf262947bdd4b7c030ea12b214207727961d4.jpg","friendlyURL":444090,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1517185875},{"appid":596350,"name":"Paladins - Public Test","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/596350\/fa03dc049462669246e8ea8b0fffe6445fddd712.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":476460,"name":"Picross Touch","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/476460\/4bfa41f574a9db978ad6cf29947ace01d3eb9cf8.jpg","friendlyURL":476460,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"1.5","last_played":1498405646},{"appid":578080,"name":"PLAYERUNKNOWN'S BATTLEGROUNDS","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/578080\/2d2732a33511b58c69aff6b098a22687a3bb8533.jpg","friendlyURL":578080,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"75","last_played":1516495541},{"appid":422870,"name":"Super Duper Flying Genocide 2017","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/422870\/7df727e1ef90d352398274ed784c0ec483a39688.jpg","friendlyURL":422870,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1518053493},{"appid":440,"name":"Team Fortress 2","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/440\/07385eb55b5ba974aebbe74d3c99626bda7920b8.jpg","friendlyURL":"TF2","availStatLinks":{"achievements":true,"global_achievements":true,"stats":true,"leaderboards":true,"global_leaderboards":true},"hours":"2.3","hours_forever":"223","last_played":1517811694},{"appid":520,"name":"Team Fortress 2 Beta","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/520\/6f6d22ab0c357d9f02a11f76ff35797e4ccdf19f.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":431960,"name":"Wallpaper Engine","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/431960\/74bcecbde31f489e396f656910c2f70872dcb0f3.jpg","friendlyURL":431960,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"2.8","last_played":1518042032},{"appid":458960,"name":"Winning Putt: Golf Online","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/458960\/fff3314f9c4322fe2b2edc47ec259f5a897d1242.jpg","friendlyURL":458960,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false}},{"appid":650700,"name":"Yume Nikki","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/650700\/a99b199d471547e8691a9f669a3c2777c3225a7e.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false}}];
+			var rgGames = [{"appid":440,"name":"Team Fortress 2","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/440\/07385eb55b5ba974aebbe74d3c99626bda7920b8.jpg","friendlyURL":"TF2","availStatLinks":{"achievements":true,"global_achievements":true,"stats":true,"leaderboards":true,"global_leaderboards":true},"hours":"2.0","hours_forever":"224","last_played":1519178312,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"85.3 MiB"}},{"appid":730,"name":"Counter-Strike: Global Offensive","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg","friendly_name":"CSGO","friendlyURL":"CSGO","availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours":"1.3","hours_forever":"122","last_played":1518335143,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"0.0 B"}},{"appid":578080,"name":"PLAYERUNKNOWN'S BATTLEGROUNDS","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/578080\/2d2732a33511b58c69aff6b098a22687a3bb8533.jpg","friendlyURL":578080,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"75","last_played":1516495541,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"25.3 MiB"}},{"appid":362890,"name":"Black Mesa","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/362890\/07165fb02e18a4cf544125c1bd350fe300aef362.jpg","friendlyURL":362890,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"10.6","last_played":1519497536,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"6.5 MiB"}},{"appid":698780,"name":"Doki Doki Literature Club","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/698780\/76c3e09407e445568c9bb32d77bf364168ea45ed.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"5.7","last_played":1519440553,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"0.0 B"}},{"appid":431960,"name":"Wallpaper Engine","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/431960\/74bcecbde31f489e396f656910c2f70872dcb0f3.jpg","friendlyURL":431960,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours":"1.7","hours_forever":"4.6","last_played":1519533283,"client_summary":{"state":"installed","status":"Ready to play","localContentSize":"0.0 B"}},{"appid":550,"name":"Left 4 Dead 2","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/550\/205863cc21e751a576d6fff851984b3170684142.jpg","friendlyURL":"L4D2","availStatLinks":{"achievements":true,"global_achievements":true,"stats":true,"leaderboards":true,"global_leaderboards":false},"hours_forever":"1.5","last_played":1517781878,"client_summary":{"localContentSize":"0.0 B"}},{"appid":476460,"name":"Picross Touch","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/476460\/4bfa41f574a9db978ad6cf29947ace01d3eb9cf8.jpg","friendlyURL":476460,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"1.5","last_played":1498405646,"client_summary":{"localContentSize":"0.0 B"}},{"appid":639790,"name":"DEEP SPACE WAIFU","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/639790\/c575efe4bf738de5bcd18bca6bf9035d821e55ff.jpg","has_adult_content":1,"friendlyURL":639790,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"hours_forever":"0.4","last_played":1518042006,"client_summary":{"localContentSize":"0.0 B"}},{"appid":639780,"name":"DEEP SPACE WAIFU: FLAT JUSTICE","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/639780\/99ad33e4dccef4948c35754777d98c4aeecb8c2e.jpg","has_adult_content":1,"friendlyURL":639780,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1518053491,"client_summary":{"localContentSize":"0.0 B"}},{"appid":444090,"name":"Paladins","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/444090\/a4bdf262947bdd4b7c030ea12b214207727961d4.jpg","friendlyURL":444090,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1517185875,"client_summary":{"localContentSize":"0.0 B"}},{"appid":422870,"name":"Super Duper Flying Genocide 2017","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/422870\/7df727e1ef90d352398274ed784c0ec483a39688.jpg","friendlyURL":422870,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1518053493,"client_summary":{"localContentSize":"0.0 B"}},{"appid":102700,"name":"A.V.A. Alliance of Valiant Arms\u2122","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/102700\/e1bc8797f8e467969b607a3853cce866af32c8fa.jpg","friendly_name":"AllianceofValiantArms","friendlyURL":"AllianceofValiantArms","availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"last_played":1499625400,"client_summary":{"localContentSize":"0.0 B"}},{"appid":648930,"name":"Deep Space Waifu - OST","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/648930\/e88bbe2937164c2a2d496798d319392e37f9252c.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"state":"no_remote","status":"This product cannot be controlled remotely","localContentSize":""}},{"appid":756280,"name":"Deep Space Waifu: Flat Justice - Soundtrack","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/756280\/99ad33e4dccef4948c35754777d98c4aeecb8c2e.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"state":"no_remote","status":"This product cannot be controlled remotely","localContentSize":""}},{"appid":701531,"name":"DEEP SPACE WAIFU ACADEMY","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/701531\/d46a27f5190000a735fec01d9e7280dadef3f8a1.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"state":"no_remote","status":"This product cannot be controlled remotely","localContentSize":""}},{"appid":596350,"name":"Paladins - Public Test","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/596350\/fa03dc049462669246e8ea8b0fffe6445fddd712.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"localContentSize":"0.0 B"}},{"appid":520,"name":"Team Fortress 2 Beta","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/520\/6f6d22ab0c357d9f02a11f76ff35797e4ccdf19f.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"state":"no_remote","status":"This product cannot be controlled remotely","localContentSize":""}},{"appid":458960,"name":"Winning Putt: Golf Online","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/458960\/fff3314f9c4322fe2b2edc47ec259f5a897d1242.jpg","friendlyURL":458960,"availStatLinks":{"achievements":true,"global_achievements":true,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"localContentSize":"0.0 B"}},{"appid":650700,"name":"Yume Nikki","logo":"http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/650700\/a99b199d471547e8691a9f669a3c2777c3225a7e.jpg","friendlyURL":false,"availStatLinks":{"achievements":false,"global_achievements":false,"stats":false,"leaderboards":false,"global_leaderboards":false},"client_summary":{"localContentSize":"0.0 B"}}];
 		var rgChangingGames = [];
 		var offerClientUninstall = false;
 		var profileLink = "http://steamcommunity.com/id/darcphansea";
 		var personaName = "\u30c0\u30fc\u30af";
 		var tab = "all";
-		var sessionID = "1dcbf586dddf32fb7f7bd393";
+		var sessionID = "954613e83a6d8335ff101d28";
 
 		$J( function() {
 			if( tab == 'all' || tab == 'recent'  )
@@ -1172,45 +1334,25 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 
 </div>	<!-- responsive_page_frame -->
 
-<div class="miniprofile_hover" style="display: none;"><div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div><div class="miniprofile_hover_inner shadow_content"></div><div class="hover_arrow left miniprofile_arrow"><div class="miniprofile_arrow_inner"></div></div><div class="hover_arrow right miniprofile_arrow"><div class="miniprofile_arrow_inner"></div></div></div><div class="popup_block2" id="links_dropdown_102700" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/102700">
+<div class="miniprofile_hover" style="display: none;"><div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div><div class="miniprofile_hover_inner shadow_content"></div><div class="hover_arrow left miniprofile_arrow"><div class="miniprofile_arrow_inner"></div></div><div class="hover_arrow right miniprofile_arrow"><div class="miniprofile_arrow_inner"></div></div></div><div class="popup_block2" id="links_dropdown_440" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/440">
 			<h5>Visit the Store Page</h5>
 		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/102700">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/440">
 			<h5>Visit the Forums</h5>
 		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=A.V.A.%20Alliance%20of%20Valiant%20Arms%E2%84%A2">
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Team%20Fortress%202">
 			<h5>Find Community Groups</h5>
 		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/102700">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/440">
 			<h5>Visit official website</h5>
 		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=102700">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=440">
 			<h5>Read related news</h5>
 		</a>
 	</div>
-</div><div class="popup_block2" id="stats_dropdown_102700" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/AllianceofValiantArms/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/AllianceofValiantArms/achievements/"><h5>Global Achievements</h5></a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_362890" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/362890">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/362890">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Black%20Mesa">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/362890">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=362890">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_362890" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/362890/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/362890/achievements/"><h5>Global Achievements</h5></a>
+</div><div class="popup_block2" id="stats_dropdown_440" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=stats"><h5>ダーク's Stats</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=leaderboards"><h5>ダーク's Leaderboards</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/TF2/achievements/"><h5>Global Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/TF2/leaderboards/"><h5>Global Leaderboards</h5></a>
 	</div>
 </div><div class="popup_block2" id="links_dropdown_730" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/730">
@@ -1232,6 +1374,123 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div><div class="popup_block2" id="stats_dropdown_730" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/CSGO/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/CSGO/achievements/"><h5>Global Achievements</h5></a>
 	</div>
+</div><div class="popup_block2" id="links_dropdown_578080" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/578080">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/578080">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=PLAYERUNKNOWN'S%20BATTLEGROUNDS">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/578080">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=578080">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_578080" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/578080/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/578080/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_362890" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/362890">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/362890">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Black%20Mesa">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/362890">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=362890">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_362890" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/362890/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/362890/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_698780" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/698780">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/698780">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Doki%20Doki%20Literature%20Club">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/698780">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=698780">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_431960" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/431960">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/431960">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Wallpaper%20Engine">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/431960">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=431960">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_431960" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/431960/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/431960/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_550" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/550">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/550">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Left%204%20Dead%202">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/550">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=550">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_550" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=stats"><h5>ダーク's Stats</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=leaderboards"><h5>ダーク's Leaderboards</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/L4D2/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_476460" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/476460">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/476460">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Picross%20Touch">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/476460">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=476460">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_476460" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/476460/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/476460/achievements/"><h5>Global Achievements</h5></a>
+	</div>
 </div><div class="popup_block2" id="links_dropdown_639790" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/639790">
 			<h5>Visit the Store Page</h5>
@@ -1252,23 +1511,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 </div><div class="popup_block2" id="stats_dropdown_639790" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/639790/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/639790/achievements/"><h5>Global Achievements</h5></a>
 	</div>
-</div><div class="popup_block2" id="links_dropdown_648930" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/648930">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/648930">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Deep%20Space%20Waifu%20-%20OST">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/648930">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=648930">
-			<h5>Read related news</h5>
-		</a>
-	</div>
 </div><div class="popup_block2" id="links_dropdown_639780" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/639780">
 			<h5>Visit the Store Page</h5>
@@ -1288,6 +1530,83 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 	</div>
 </div><div class="popup_block2" id="stats_dropdown_639780" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/639780/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/639780/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_444090" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/444090">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/444090">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Paladins">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/444090">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=444090">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_444090" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/444090/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/444090/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_422870" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/422870">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/422870">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Super%20Duper%20Flying%20Genocide%202017">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/422870">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=422870">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_422870" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/422870/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/422870/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_102700" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/102700">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/102700">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=A.V.A.%20Alliance%20of%20Valiant%20Arms%E2%84%A2">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/102700">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=102700">
+			<h5>Read related news</h5>
+		</a>
+	</div>
+</div><div class="popup_block2" id="stats_dropdown_102700" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/AllianceofValiantArms/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/AllianceofValiantArms/achievements/"><h5>Global Achievements</h5></a>
+	</div>
+</div><div class="popup_block2" id="links_dropdown_648930" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/648930">
+			<h5>Visit the Store Page</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/648930">
+			<h5>Visit the Forums</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Deep%20Space%20Waifu%20-%20OST">
+			<h5>Find Community Groups</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/648930">
+			<h5>Visit official website</h5>
+		</a>
+		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=648930">
+			<h5>Read related news</h5>
+		</a>
 	</div>
 </div><div class="popup_block2" id="links_dropdown_756280" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/756280">
@@ -1323,63 +1642,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 			<h5>Read related news</h5>
 		</a>
 	</div>
-</div><div class="popup_block2" id="links_dropdown_698780" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/698780">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/698780">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Doki%20Doki%20Literature%20Club">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/698780">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=698780">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_550" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/550">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/550">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Left%204%20Dead%202">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/550">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=550">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_550" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=stats"><h5>ダーク's Stats</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/L4D2/?tab=leaderboards"><h5>ダーク's Leaderboards</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/L4D2/achievements/"><h5>Global Achievements</h5></a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_444090" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/444090">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/444090">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Paladins">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/444090">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=444090">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_444090" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/444090/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/444090/achievements/"><h5>Global Achievements</h5></a>
-	</div>
 </div><div class="popup_block2" id="links_dropdown_596350" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/596350">
 			<h5>Visit the Store Page</h5>
@@ -1397,86 +1659,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 			<h5>Read related news</h5>
 		</a>
 	</div>
-</div><div class="popup_block2" id="links_dropdown_476460" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/476460">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/476460">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Picross%20Touch">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/476460">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=476460">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_476460" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/476460/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/476460/achievements/"><h5>Global Achievements</h5></a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_578080" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/578080">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/578080">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=PLAYERUNKNOWN'S%20BATTLEGROUNDS">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/578080">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=578080">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_578080" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/578080/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/578080/achievements/"><h5>Global Achievements</h5></a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_422870" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/422870">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/422870">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Super%20Duper%20Flying%20Genocide%202017">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/422870">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=422870">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_422870" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/422870/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/422870/achievements/"><h5>Global Achievements</h5></a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_440" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/440">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/440">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Team%20Fortress%202">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/440">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=440">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_440" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=stats"><h5>ダーク's Stats</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/TF2/?tab=leaderboards"><h5>ダーク's Leaderboards</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/TF2/achievements/"><h5>Global Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/TF2/leaderboards/"><h5>Global Leaderboards</h5></a>
-	</div>
 </div><div class="popup_block2" id="links_dropdown_520" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/520">
 			<h5>Visit the Store Page</h5>
@@ -1493,26 +1675,6 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=520">
 			<h5>Read related news</h5>
 		</a>
-	</div>
-</div><div class="popup_block2" id="links_dropdown_431960" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/431960">
-			<h5>Visit the Store Page</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/forum/431960">
-			<h5>Visit the Forums</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://steamcommunity.com/search/groups/?text=Wallpaper%20Engine">
-			<h5>Find Community Groups</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/appofficialsite/431960">
-			<h5>Visit official website</h5>
-		</a>
-		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/news/?appids=431960">
-			<h5>Read related news</h5>
-		</a>
-	</div>
-</div><div class="popup_block2" id="stats_dropdown_431960" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
-	<a class="popup_menu_item2 tight" href="http://steamcommunity.com/id/darcphansea/stats/431960/?tab=achievements"><h5>ダーク's Achievements</h5></a><a class="popup_menu_item2 tight" href="http://steamcommunity.com/stats/431960/achievements/"><h5>Global Achievements</h5></a>
 	</div>
 </div><div class="popup_block2" id="links_dropdown_458960" style="display: none;">	<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>	<div class="popup_body2 popup_menu2 shadow_content">
 		<a class="popup_menu_item2 tight" href="http://store.steampowered.com/app/458960">

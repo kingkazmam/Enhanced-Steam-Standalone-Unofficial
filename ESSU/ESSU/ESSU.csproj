@@ -156,6 +156,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="enhancedsteam32.ico" />
+    <None Include="Resources\win32_win_restore.png" />
+    <None Include="Resources\win32_win_min.png" />
+    <None Include="Resources\win32_win_max.png" />
+    <None Include="Resources\win32_win_close.png" />
+    <None Include="Resources\inbox_gift.png" />
+    <None Include="Resources\inbox_invite.png" />
+    <None Include="Resources\inbox_item.png" />
+    <None Include="Resources\inbox_comment.png" />
+    <None Include="Resources\resizer.png" />
+    <None Include="Resources\notifications.png" />
+    <None Include="Resources\friends_list.png" />
+    <None Include="Resources\workshop_p.png" />
+    <None Include="Resources\workshop_h.png" />
+    <None Include="Resources\workshop.png" />
+    <None Include="Resources\achievements_p.png" />
+    <None Include="Resources\achievements_h.png" />
+    <None Include="Resources\achievements.png" />
+    <None Include="Resources\friends_p.png" />
+    <None Include="Resources\friends_h.png" />
+    <None Include="Resources\friends.png" />
+    <None Include="Resources\news_p.png" />
+    <None Include="Resources\news_h.png" />
+    <None Include="Resources\news.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\play_p.png" />
+    <None Include="Resources\install_p.png" />
+    <None Include="Resources\play_h.png" />
+    <None Include="Resources\install.png" />
+    <None Include="Resources\install_h.png" />
+    <None Include="Resources\play.png" />
     <None Include="Resources\Search.png" />
     <None Include="Resources\Menu.png" />
   </ItemGroup>

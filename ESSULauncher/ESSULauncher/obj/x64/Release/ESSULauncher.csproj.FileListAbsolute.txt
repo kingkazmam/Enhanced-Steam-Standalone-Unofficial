@@ -17,3 +17,22 @@ D:\ESSU Source Files\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.cspr
 D:\ESSU Source Files\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.csproj.CoreCompileInputs.cache
 D:\ESSU Source Files\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.exe
 D:\ESSU Source Files\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\ESSULauncher.exe.config
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\ESSULauncher.exe
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\ESSULauncher.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.Core.dll
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.dll
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.WinForms.dll
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.WinForms.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.WinForms.xml
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.xml
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.Core.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\bin\x64\Release\CefSharp.Core.xml
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.csprojResolveAssemblyReference.cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.frm_main.resources
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.Properties.Resources.resources
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.csproj.GenerateResource.Cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.csproj.CoreCompileInputs.cache
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.exe
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSULauncher\ESSULauncher\obj\x64\Release\ESSULauncher.pdb

@@ -153,6 +153,7 @@ namespace ESSU
 
         private void list_bookmarks_DoubleClick(object sender, EventArgs e)
         {
+            if (list_bookmarks.SelectedIndex == -1) return;
             Settings.bookmarkGOTO = bookmarkarray[1, list_bookmarks.SelectedIndex];
             this.Close();
         }
