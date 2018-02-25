@@ -80,7 +80,7 @@ namespace ESSU
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 38);
+            this.label2.Location = new System.Drawing.Point(10, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 4;
@@ -110,7 +110,7 @@ namespace ESSU
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(399, 0);
+            this.btn_min.Location = new System.Drawing.Point(400, 0);
             this.btn_min.Name = "btn_min";
             this.btn_min.Size = new System.Drawing.Size(40, 40);
             this.btn_min.TabIndex = 5;
@@ -131,7 +131,7 @@ namespace ESSU
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_exit.Location = new System.Drawing.Point(439, 0);
+            this.btn_exit.Location = new System.Drawing.Point(440, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 6;
@@ -141,6 +141,7 @@ namespace ESSU
             // list_bookmarks
             // 
             this.list_bookmarks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.list_bookmarks.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.list_bookmarks.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.list_bookmarks.ForeColor = System.Drawing.Color.White;
             this.list_bookmarks.FormattingEnabled = true;

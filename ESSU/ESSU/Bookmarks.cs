@@ -29,8 +29,11 @@ namespace ESSU
 {
     public partial class Bookmarks : Form
     {
+
+
         int counter = 0;
         string[,] bookmarkarray = new string[2,100];
+
         public Bookmarks()
         {
             InitializeComponent();
@@ -81,19 +84,20 @@ namespace ESSU
 
         private void list_games_DrawItem(object sender, DrawItemEventArgs e)
         {
-            SolidBrush reportsForegroundBrushSelected = new SolidBrush(Color.FromArgb(255, 26, 26, 26));
+            SolidBrush reportsForegroundBrushSelected = new SolidBrush(Color.FromArgb(255, 255, 255, 255));
             SolidBrush reportsForegroundBrush = new SolidBrush(Color.White);
             SolidBrush reportsForegroundBrush2 = new SolidBrush(Color.Gray);
-            SolidBrush reportsForegroundBrush3 = new SolidBrush(Color.FromArgb(255, 102, 36, 226));
             SolidBrush reportsBackgroundBrushSelected = new SolidBrush(Color.FromArgb(255, 102, 36, 226));
             SolidBrush reportsBackgroundBrush1 = new SolidBrush(Color.FromArgb(255, 39, 39, 39));
             e.DrawBackground();
             bool selected = ((e.State & DrawItemState.Selected) == DrawItemState.Selected);
 
             int index = e.Index;
+
             if (index >= 0 && index < list_bookmarks.Items.Count)
             {
                 string text = list_bookmarks.Items[index].ToString();
+
                 Graphics g = e.Graphics;
 
                 //background:
@@ -103,17 +107,12 @@ namespace ESSU
                 else
                     backgroundBrush = reportsBackgroundBrush1;
 
-
-
                 g.FillRectangle(backgroundBrush, e.Bounds);
-
                 //text:
                 SolidBrush foregroundBrush = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush;
                 SolidBrush foregroundBrush2 = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush2;
-                SolidBrush foregroundBrush3 = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush3;
-                g.DrawString(text, e.Font, foregroundBrush2, list_bookmarks.GetItemRectangle(index).Location);
+                g.DrawString(text, e.Font, foregroundBrush, e.Bounds);
             }
-
             e.DrawFocusRectangle();
         }
 

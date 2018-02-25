@@ -280,9 +280,10 @@ namespace ESSU
                     if (list_games.Items[x].ToString().StartsWith("▶ "))
                     {
                         list_games.Items[x] = list_games.Items[x].ToString().Replace("▶ ", "▼ ");
+                        showCate();
                     }
                 }
-                showCate();
+                
                 Settings.tempName = null;
             }
             if (Settings.bookmarkGOTO != string.Empty)
@@ -512,7 +513,7 @@ namespace ESSU
                 }
             }
             
-            //if (list_games.Items.Count >= 0) list_games.SelectedIndex = 0;
+            if (list_games.Items.Count >= 0) list_games.SelectedIndex = 0;
         }
 
         private void startGame(string appid)
@@ -1570,7 +1571,7 @@ namespace ESSU
 
         void showCate()
         {
-            
+
             string[] listarray = new string[10000];
 
             for (int i = 0; i < list_games.Items.Count; i++)
