@@ -1528,17 +1528,21 @@ namespace ESSU
 
         private void frm_main_Load_1(object sender, EventArgs e)
         {
-            foreach (string line in File.ReadAllLines(Application.StartupPath + "\\library.txt"))
+            try
             {
-                if (line.Contains("<title>"))
+                foreach (string line in File.ReadAllLines(Application.StartupPath + "\\library.txt"))
                 {
-                    string l = line;
-                    l = l.Replace("<title>Steam Community :: ", string.Empty);
-                    l = l.Replace(" :: Games</title>", string.Empty);
-                    if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
-                    btn_user.Text = l;
+                    if (line.Contains("<title>"))
+                    {
+                        string l = line;
+                        l = l.Replace("<title>Steam Community :: ", string.Empty);
+                        l = l.Replace(" :: Games</title>", string.Empty);
+                        if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
+                        btn_user.Text = l;
+                    }
                 }
-            }
+            } catch { }
+            
             //btn_user.Text = 
             this.BringToFront();
             this.Size = this.MinimumSize;
