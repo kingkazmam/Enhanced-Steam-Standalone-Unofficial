@@ -66,34 +66,36 @@ namespace ESSU
             this.refresh = new System.Windows.Forms.Timer(this.components);
             this.panel_Libary = new System.Windows.Forms.Panel();
             this.btn_erase_Text = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel_library_update = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_workshop = new System.Windows.Forms.Button();
-            this.btn_achieve = new System.Windows.Forms.Button();
             this.txt_searchForGame = new System.Windows.Forms.TextBox();
+            this.list_games = new System.Windows.Forms.ListBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel_library_details = new System.Windows.Forms.Panel();
+            this.lbl_newsParagraph = new System.Windows.Forms.Label();
+            this.lbl_gameTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_workshop = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_achieve = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_review = new System.Windows.Forms.Button();
             this.btn_support = new System.Windows.Forms.Button();
             this.btn_guides = new System.Windows.Forms.Button();
+            this.btn_storePage = new System.Windows.Forms.Button();
             this.btn_dlc = new System.Windows.Forms.Button();
+            this.btn_community = new System.Windows.Forms.Button();
             this.btn_news2 = new System.Windows.Forms.Button();
+            this.btn_playGame = new System.Windows.Forms.Button();
             this.btn_relatedG = new System.Windows.Forms.Button();
+            this.btn_news = new System.Windows.Forms.Button();
             this.btn_discussions = new System.Windows.Forms.Button();
             this.btn_friendsThatPlay = new System.Windows.Forms.Button();
-            this.btn_news = new System.Windows.Forms.Button();
-            this.btn_playGame = new System.Windows.Forms.Button();
-            this.btn_community = new System.Windows.Forms.Button();
-            this.btn_storePage = new System.Windows.Forms.Button();
-            this.lbl_gameTitle = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.list_games = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_newsTitle = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.picture_game_preview = new System.Windows.Forms.PictureBox();
             this.context_notification = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,10 +170,13 @@ namespace ESSU
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.playersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_setCat = new System.Windows.Forms.Button();
             this.panel_topbar.SuspendLayout();
             this.panel_bottombar.SuspendLayout();
             this.panel_Libary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_library_details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_game_preview)).BeginInit();
             this.context_notification.SuspendLayout();
             this.context_gameMenu.SuspendLayout();
@@ -188,9 +193,9 @@ namespace ESSU
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_browser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.panel_browser.Location = new System.Drawing.Point(1100, 0);
+            this.panel_browser.Location = new System.Drawing.Point(1120, 50);
             this.panel_browser.Name = "panel_browser";
-            this.panel_browser.Size = new System.Drawing.Size(1093, 688);
+            this.panel_browser.Size = new System.Drawing.Size(1093, 691);
             this.panel_browser.TabIndex = 1;
             // 
             // panel_topbar
@@ -295,9 +300,9 @@ namespace ESSU
             this.btn_account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_account.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_account.ForeColor = System.Drawing.Color.White;
-            this.btn_account.Location = new System.Drawing.Point(890, 0);
+            this.btn_account.Location = new System.Drawing.Point(890, -4);
             this.btn_account.Name = "btn_account";
-            this.btn_account.Size = new System.Drawing.Size(35, 40);
+            this.btn_account.Size = new System.Drawing.Size(35, 47);
             this.btn_account.TabIndex = 8;
             this.btn_account.Text = "$";
             this.btn_account.UseVisualStyleBackColor = false;
@@ -405,7 +410,7 @@ namespace ESSU
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
             this.btn_min.Location = new System.Drawing.Point(995, 0);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(40, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 47);
             this.btn_min.TabIndex = 2;
             this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
@@ -525,36 +530,12 @@ namespace ESSU
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Libary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.panel_Libary.Controls.Add(this.btn_erase_Text);
-            this.panel_Libary.Controls.Add(this.label1);
             this.panel_Libary.Controls.Add(this.panel_library_update);
             this.panel_Libary.Controls.Add(this.pictureBox1);
-            this.panel_Libary.Controls.Add(this.btn_workshop);
-            this.panel_Libary.Controls.Add(this.btn_achieve);
             this.panel_Libary.Controls.Add(this.txt_searchForGame);
-            this.panel_Libary.Controls.Add(this.btn_review);
-            this.panel_Libary.Controls.Add(this.btn_support);
-            this.panel_Libary.Controls.Add(this.btn_guides);
-            this.panel_Libary.Controls.Add(this.btn_dlc);
-            this.panel_Libary.Controls.Add(this.btn_news2);
-            this.panel_Libary.Controls.Add(this.btn_relatedG);
-            this.panel_Libary.Controls.Add(this.btn_discussions);
-            this.panel_Libary.Controls.Add(this.btn_friendsThatPlay);
-            this.panel_Libary.Controls.Add(this.btn_news);
-            this.panel_Libary.Controls.Add(this.btn_playGame);
-            this.panel_Libary.Controls.Add(this.btn_community);
-            this.panel_Libary.Controls.Add(this.btn_storePage);
-            this.panel_Libary.Controls.Add(this.panel_browser);
-            this.panel_Libary.Controls.Add(this.lbl_gameTitle);
-            this.panel_Libary.Controls.Add(this.label2);
-            this.panel_Libary.Controls.Add(this.label3);
             this.panel_Libary.Controls.Add(this.list_games);
-            this.panel_Libary.Controls.Add(this.label4);
-            this.panel_Libary.Controls.Add(this.label7);
-            this.panel_Libary.Controls.Add(this.label5);
-            this.panel_Libary.Controls.Add(this.label8);
-            this.panel_Libary.Controls.Add(this.label6);
             this.panel_Libary.Controls.Add(this.label9);
-            this.panel_Libary.Controls.Add(this.picture_game_preview);
+            this.panel_Libary.Controls.Add(this.panel_library_details);
             this.panel_Libary.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_Libary.Location = new System.Drawing.Point(11, 50);
             this.panel_Libary.Name = "panel_Libary";
@@ -577,18 +558,6 @@ namespace ESSU
             this.btn_erase_Text.Visible = false;
             this.btn_erase_Text.Click += new System.EventHandler(this.btn_erase_Text_Click);
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(931, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 21);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Links";
-            // 
             // panel_library_update
             // 
             this.panel_library_update.Location = new System.Drawing.Point(-71, -50);
@@ -607,56 +576,6 @@ namespace ESSU
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_workshop
-            // 
-            this.btn_workshop.AutoSize = true;
-            this.btn_workshop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_workshop.BackgroundImage = global::ESSU.Properties.Resources.workshop;
-            this.btn_workshop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_workshop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_workshop.FlatAppearance.BorderSize = 0;
-            this.btn_workshop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_workshop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_workshop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_workshop.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_workshop.ForeColor = System.Drawing.Color.White;
-            this.btn_workshop.Location = new System.Drawing.Point(318, 564);
-            this.btn_workshop.Name = "btn_workshop";
-            this.btn_workshop.Size = new System.Drawing.Size(40, 40);
-            this.btn_workshop.TabIndex = 29;
-            this.btn_workshop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_workshop.UseVisualStyleBackColor = false;
-            this.btn_workshop.Click += new System.EventHandler(this.btn_workshop_Click);
-            this.btn_workshop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_workshop_MouseDown);
-            this.btn_workshop.MouseEnter += new System.EventHandler(this.btn_workshop_MouseEnter);
-            this.btn_workshop.MouseLeave += new System.EventHandler(this.btn_workshop_MouseLeave);
-            this.btn_workshop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_workshop_MouseUp);
-            // 
-            // btn_achieve
-            // 
-            this.btn_achieve.AutoSize = true;
-            this.btn_achieve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_achieve.BackgroundImage = global::ESSU.Properties.Resources.achievements;
-            this.btn_achieve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_achieve.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_achieve.FlatAppearance.BorderSize = 0;
-            this.btn_achieve.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_achieve.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_achieve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_achieve.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_achieve.ForeColor = System.Drawing.Color.White;
-            this.btn_achieve.Location = new System.Drawing.Point(318, 493);
-            this.btn_achieve.Name = "btn_achieve";
-            this.btn_achieve.Size = new System.Drawing.Size(40, 40);
-            this.btn_achieve.TabIndex = 28;
-            this.btn_achieve.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_achieve.UseVisualStyleBackColor = false;
-            this.btn_achieve.Click += new System.EventHandler(this.btn_achieve_Click);
-            this.btn_achieve.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_achieve_MouseDown);
-            this.btn_achieve.MouseEnter += new System.EventHandler(this.btn_achieve_MouseEnter);
-            this.btn_achieve.MouseLeave += new System.EventHandler(this.btn_achieve_MouseLeave);
-            this.btn_achieve.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_achieve_MouseUp);
-            // 
             // txt_searchForGame
             // 
             this.txt_searchForGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
@@ -673,6 +592,196 @@ namespace ESSU
             this.txt_searchForGame.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_searchForGame_KeyUp);
             this.txt_searchForGame.Leave += new System.EventHandler(this.txt_searchForGame_Leave);
             // 
+            // list_games
+            // 
+            this.list_games.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.list_games.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.list_games.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.list_games.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.list_games.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.list_games.ForeColor = System.Drawing.Color.White;
+            this.list_games.FormattingEnabled = true;
+            this.list_games.IntegralHeight = false;
+            this.list_games.ItemHeight = 20;
+            this.list_games.Location = new System.Drawing.Point(0, 47);
+            this.list_games.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.list_games.Name = "list_games";
+            this.list_games.Size = new System.Drawing.Size(300, 640);
+            this.list_games.TabIndex = 2;
+            this.list_games.Click += new System.EventHandler(this.list_games_Click);
+            this.list_games.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.list_games_DrawItem);
+            this.list_games.SelectedIndexChanged += new System.EventHandler(this.list_games_SelectedIndexChanged);
+            this.list_games.DoubleClick += new System.EventHandler(this.btn_playGame_Click);
+            this.list_games.KeyUp += new System.Windows.Forms.KeyEventHandler(this.list_games_KeyUp);
+            this.list_games.MouseDown += new System.Windows.Forms.MouseEventHandler(this.list_games_MouseDown);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(300, 39);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "\r\n";
+            // 
+            // panel_library_details
+            // 
+            this.panel_library_details.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_library_details.AutoScroll = true;
+            this.panel_library_details.AutoScrollMargin = new System.Drawing.Size(0, 30);
+            this.panel_library_details.Controls.Add(this.btn_setCat);
+            this.panel_library_details.Controls.Add(this.label7);
+            this.panel_library_details.Controls.Add(this.lbl_newsParagraph);
+            this.panel_library_details.Controls.Add(this.lbl_gameTitle);
+            this.panel_library_details.Controls.Add(this.label1);
+            this.panel_library_details.Controls.Add(this.btn_workshop);
+            this.panel_library_details.Controls.Add(this.label5);
+            this.panel_library_details.Controls.Add(this.btn_achieve);
+            this.panel_library_details.Controls.Add(this.label4);
+            this.panel_library_details.Controls.Add(this.btn_review);
+            this.panel_library_details.Controls.Add(this.btn_support);
+            this.panel_library_details.Controls.Add(this.btn_guides);
+            this.panel_library_details.Controls.Add(this.btn_storePage);
+            this.panel_library_details.Controls.Add(this.btn_dlc);
+            this.panel_library_details.Controls.Add(this.btn_community);
+            this.panel_library_details.Controls.Add(this.btn_news2);
+            this.panel_library_details.Controls.Add(this.btn_playGame);
+            this.panel_library_details.Controls.Add(this.btn_relatedG);
+            this.panel_library_details.Controls.Add(this.btn_news);
+            this.panel_library_details.Controls.Add(this.btn_discussions);
+            this.panel_library_details.Controls.Add(this.btn_friendsThatPlay);
+            this.panel_library_details.Controls.Add(this.label3);
+            this.panel_library_details.Controls.Add(this.label8);
+            this.panel_library_details.Controls.Add(this.label2);
+            this.panel_library_details.Controls.Add(this.lbl_newsTitle);
+            this.panel_library_details.Controls.Add(this.label6);
+            this.panel_library_details.Controls.Add(this.picture_game_preview);
+            this.panel_library_details.Location = new System.Drawing.Point(305, 0);
+            this.panel_library_details.Name = "panel_library_details";
+            this.panel_library_details.Size = new System.Drawing.Size(788, 688);
+            this.panel_library_details.TabIndex = 45;
+            // 
+            // lbl_newsParagraph
+            // 
+            this.lbl_newsParagraph.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_newsParagraph.AutoSize = true;
+            this.lbl_newsParagraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.lbl_newsParagraph.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_newsParagraph.ForeColor = System.Drawing.Color.White;
+            this.lbl_newsParagraph.Location = new System.Drawing.Point(62, 670);
+            this.lbl_newsParagraph.MaximumSize = new System.Drawing.Size(520, 0);
+            this.lbl_newsParagraph.Name = "lbl_newsParagraph";
+            this.lbl_newsParagraph.Size = new System.Drawing.Size(157, 17);
+            this.lbl_newsParagraph.TabIndex = 42;
+            this.lbl_newsParagraph.Text = "Content About This Game\r\n";
+            // 
+            // lbl_gameTitle
+            // 
+            this.lbl_gameTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_gameTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.lbl_gameTitle.Font = new System.Drawing.Font("Segoe UI", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gameTitle.ForeColor = System.Drawing.Color.White;
+            this.lbl_gameTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbl_gameTitle.Name = "lbl_gameTitle";
+            this.lbl_gameTitle.Size = new System.Drawing.Size(781, 40);
+            this.lbl_gameTitle.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(633, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 21);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Links";
+            // 
+            // btn_workshop
+            // 
+            this.btn_workshop.AutoSize = true;
+            this.btn_workshop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_workshop.BackgroundImage = global::ESSU.Properties.Resources.workshop;
+            this.btn_workshop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_workshop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_workshop.FlatAppearance.BorderSize = 0;
+            this.btn_workshop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_workshop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_workshop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_workshop.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btn_workshop.ForeColor = System.Drawing.Color.White;
+            this.btn_workshop.Location = new System.Drawing.Point(12, 557);
+            this.btn_workshop.Name = "btn_workshop";
+            this.btn_workshop.Size = new System.Drawing.Size(40, 40);
+            this.btn_workshop.TabIndex = 29;
+            this.btn_workshop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_workshop.UseVisualStyleBackColor = false;
+            this.btn_workshop.Click += new System.EventHandler(this.btn_workshop_Click);
+            this.btn_workshop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_workshop_MouseDown);
+            this.btn_workshop.MouseEnter += new System.EventHandler(this.btn_workshop_MouseEnter);
+            this.btn_workshop.MouseLeave += new System.EventHandler(this.btn_workshop_MouseLeave);
+            this.btn_workshop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_workshop_MouseUp);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(0, 545);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(626, 65);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "\r\n               Workshop";
+            // 
+            // btn_achieve
+            // 
+            this.btn_achieve.AutoSize = true;
+            this.btn_achieve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_achieve.BackgroundImage = global::ESSU.Properties.Resources.achievements;
+            this.btn_achieve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_achieve.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_achieve.FlatAppearance.BorderSize = 0;
+            this.btn_achieve.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_achieve.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_achieve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_achieve.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btn_achieve.ForeColor = System.Drawing.Color.White;
+            this.btn_achieve.Location = new System.Drawing.Point(12, 486);
+            this.btn_achieve.Name = "btn_achieve";
+            this.btn_achieve.Size = new System.Drawing.Size(40, 40);
+            this.btn_achieve.TabIndex = 28;
+            this.btn_achieve.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_achieve.UseVisualStyleBackColor = false;
+            this.btn_achieve.Click += new System.EventHandler(this.btn_achieve_Click);
+            this.btn_achieve.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_achieve_MouseDown);
+            this.btn_achieve.MouseEnter += new System.EventHandler(this.btn_achieve_MouseEnter);
+            this.btn_achieve.MouseLeave += new System.EventHandler(this.btn_achieve_MouseLeave);
+            this.btn_achieve.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_achieve_MouseUp);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(0, 474);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(626, 65);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "\r\n               Achievements";
+            // 
             // btn_review
             // 
             this.btn_review.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -685,9 +794,9 @@ namespace ESSU
             this.btn_review.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_review.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_review.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_review.Location = new System.Drawing.Point(934, 477);
+            this.btn_review.Location = new System.Drawing.Point(635, 478);
             this.btn_review.Name = "btn_review";
-            this.btn_review.Size = new System.Drawing.Size(152, 47);
+            this.btn_review.Size = new System.Drawing.Size(131, 47);
             this.btn_review.TabIndex = 26;
             this.btn_review.Text = "Write Review";
             this.btn_review.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -706,9 +815,9 @@ namespace ESSU
             this.btn_support.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_support.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_support.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_support.Location = new System.Drawing.Point(934, 429);
+            this.btn_support.Location = new System.Drawing.Point(635, 430);
             this.btn_support.Name = "btn_support";
-            this.btn_support.Size = new System.Drawing.Size(152, 47);
+            this.btn_support.Size = new System.Drawing.Size(131, 47);
             this.btn_support.TabIndex = 25;
             this.btn_support.Text = "Support";
             this.btn_support.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -718,23 +827,43 @@ namespace ESSU
             // btn_guides
             // 
             this.btn_guides.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_guides.AutoSize = true;
             this.btn_guides.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btn_guides.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_guides.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_guides.FlatAppearance.BorderSize = 0;
             this.btn_guides.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.btn_guides.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guides.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guides.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guides.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_guides.Location = new System.Drawing.Point(934, 381);
+            this.btn_guides.Location = new System.Drawing.Point(635, 382);
             this.btn_guides.Name = "btn_guides";
-            this.btn_guides.Size = new System.Drawing.Size(152, 47);
+            this.btn_guides.Size = new System.Drawing.Size(131, 47);
             this.btn_guides.TabIndex = 24;
             this.btn_guides.Text = "Community Guides";
             this.btn_guides.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_guides.UseVisualStyleBackColor = false;
             this.btn_guides.Click += new System.EventHandler(this.btn_guides_Click);
+            // 
+            // btn_storePage
+            // 
+            this.btn_storePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_storePage.AutoSize = true;
+            this.btn_storePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_storePage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_storePage.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_storePage.FlatAppearance.BorderSize = 0;
+            this.btn_storePage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_storePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_storePage.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_storePage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.btn_storePage.Location = new System.Drawing.Point(635, 286);
+            this.btn_storePage.Name = "btn_storePage";
+            this.btn_storePage.Size = new System.Drawing.Size(131, 47);
+            this.btn_storePage.TabIndex = 11;
+            this.btn_storePage.Text = "Store Page";
+            this.btn_storePage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_storePage.UseVisualStyleBackColor = false;
+            this.btn_storePage.Click += new System.EventHandler(this.btn_storePage_Click);
             // 
             // btn_dlc
             // 
@@ -748,14 +877,35 @@ namespace ESSU
             this.btn_dlc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dlc.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dlc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_dlc.Location = new System.Drawing.Point(934, 333);
+            this.btn_dlc.Location = new System.Drawing.Point(635, 334);
             this.btn_dlc.Name = "btn_dlc";
-            this.btn_dlc.Size = new System.Drawing.Size(152, 47);
+            this.btn_dlc.Size = new System.Drawing.Size(131, 47);
             this.btn_dlc.TabIndex = 23;
             this.btn_dlc.Text = "DLC";
             this.btn_dlc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_dlc.UseVisualStyleBackColor = false;
             this.btn_dlc.Click += new System.EventHandler(this.btn_dlc_Click);
+            // 
+            // btn_community
+            // 
+            this.btn_community.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_community.AutoSize = true;
+            this.btn_community.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_community.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_community.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_community.FlatAppearance.BorderSize = 0;
+            this.btn_community.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_community.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_community.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_community.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.btn_community.Location = new System.Drawing.Point(635, 94);
+            this.btn_community.Name = "btn_community";
+            this.btn_community.Size = new System.Drawing.Size(131, 47);
+            this.btn_community.TabIndex = 13;
+            this.btn_community.Text = "Community Hub";
+            this.btn_community.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_community.UseVisualStyleBackColor = false;
+            this.btn_community.Click += new System.EventHandler(this.btn_community_Click);
             // 
             // btn_news2
             // 
@@ -769,14 +919,38 @@ namespace ESSU
             this.btn_news2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_news2.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_news2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_news2.Location = new System.Drawing.Point(934, 237);
+            this.btn_news2.Location = new System.Drawing.Point(635, 238);
             this.btn_news2.Name = "btn_news2";
-            this.btn_news2.Size = new System.Drawing.Size(152, 47);
+            this.btn_news2.Size = new System.Drawing.Size(131, 47);
             this.btn_news2.TabIndex = 22;
             this.btn_news2.Text = "News";
             this.btn_news2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_news2.UseVisualStyleBackColor = false;
             this.btn_news2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_playGame
+            // 
+            this.btn_playGame.AutoSize = true;
+            this.btn_playGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_playGame.BackgroundImage = global::ESSU.Properties.Resources.play;
+            this.btn_playGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_playGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_playGame.FlatAppearance.BorderSize = 0;
+            this.btn_playGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_playGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_playGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_playGame.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_playGame.ForeColor = System.Drawing.Color.White;
+            this.btn_playGame.Location = new System.Drawing.Point(12, 346);
+            this.btn_playGame.Name = "btn_playGame";
+            this.btn_playGame.Size = new System.Drawing.Size(40, 40);
+            this.btn_playGame.TabIndex = 9;
+            this.btn_playGame.UseVisualStyleBackColor = false;
+            this.btn_playGame.Click += new System.EventHandler(this.btn_playGame_Click);
+            this.btn_playGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_playGame_MouseDown);
+            this.btn_playGame.MouseEnter += new System.EventHandler(this.btn_playGame_MouseEnter);
+            this.btn_playGame.MouseLeave += new System.EventHandler(this.btn_playGame_MouseLeave);
+            this.btn_playGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_playGame_MouseUp);
             // 
             // btn_relatedG
             // 
@@ -790,14 +964,38 @@ namespace ESSU
             this.btn_relatedG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_relatedG.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_relatedG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_relatedG.Location = new System.Drawing.Point(934, 189);
+            this.btn_relatedG.Location = new System.Drawing.Point(635, 190);
             this.btn_relatedG.Name = "btn_relatedG";
-            this.btn_relatedG.Size = new System.Drawing.Size(152, 47);
+            this.btn_relatedG.Size = new System.Drawing.Size(131, 47);
             this.btn_relatedG.TabIndex = 21;
             this.btn_relatedG.Text = "Related Groups";
             this.btn_relatedG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_relatedG.UseVisualStyleBackColor = false;
             this.btn_relatedG.Click += new System.EventHandler(this.btn_relatedG_Click);
+            // 
+            // btn_news
+            // 
+            this.btn_news.AutoSize = true;
+            this.btn_news.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_news.BackgroundImage = global::ESSU.Properties.Resources.news;
+            this.btn_news.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_news.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_news.FlatAppearance.BorderSize = 0;
+            this.btn_news.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_news.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_news.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_news.Font = new System.Drawing.Font("Wingdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btn_news.ForeColor = System.Drawing.Color.White;
+            this.btn_news.Location = new System.Drawing.Point(12, 628);
+            this.btn_news.Name = "btn_news";
+            this.btn_news.Size = new System.Drawing.Size(40, 40);
+            this.btn_news.TabIndex = 16;
+            this.btn_news.UseVisualStyleBackColor = false;
+            this.btn_news.Click += new System.EventHandler(this.button1_Click);
+            this.btn_news.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_news_MouseDown);
+            this.btn_news.MouseEnter += new System.EventHandler(this.btn_news_MouseEnter);
+            this.btn_news.MouseLeave += new System.EventHandler(this.btn_news_MouseLeave);
+            this.btn_news.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_news_MouseUp);
             // 
             // btn_discussions
             // 
@@ -811,9 +1009,9 @@ namespace ESSU
             this.btn_discussions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_discussions.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_discussions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_discussions.Location = new System.Drawing.Point(934, 141);
+            this.btn_discussions.Location = new System.Drawing.Point(635, 142);
             this.btn_discussions.Name = "btn_discussions";
-            this.btn_discussions.Size = new System.Drawing.Size(152, 47);
+            this.btn_discussions.Size = new System.Drawing.Size(131, 47);
             this.btn_discussions.TabIndex = 20;
             this.btn_discussions.Text = "Discussions";
             this.btn_discussions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -833,7 +1031,7 @@ namespace ESSU
             this.btn_friendsThatPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_friendsThatPlay.Font = new System.Drawing.Font("Webdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_friendsThatPlay.ForeColor = System.Drawing.Color.White;
-            this.btn_friendsThatPlay.Location = new System.Drawing.Point(318, 422);
+            this.btn_friendsThatPlay.Location = new System.Drawing.Point(12, 415);
             this.btn_friendsThatPlay.Name = "btn_friendsThatPlay";
             this.btn_friendsThatPlay.Size = new System.Drawing.Size(40, 40);
             this.btn_friendsThatPlay.TabIndex = 17;
@@ -844,121 +1042,6 @@ namespace ESSU
             this.btn_friendsThatPlay.MouseLeave += new System.EventHandler(this.btn_friendsThatPlay_MouseLeave);
             this.btn_friendsThatPlay.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_friendsThatPlay_MouseUp);
             // 
-            // btn_news
-            // 
-            this.btn_news.AutoSize = true;
-            this.btn_news.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_news.BackgroundImage = global::ESSU.Properties.Resources.news;
-            this.btn_news.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_news.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_news.FlatAppearance.BorderSize = 0;
-            this.btn_news.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_news.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_news.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_news.Font = new System.Drawing.Font("Wingdings", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_news.ForeColor = System.Drawing.Color.White;
-            this.btn_news.Location = new System.Drawing.Point(318, 635);
-            this.btn_news.Name = "btn_news";
-            this.btn_news.Size = new System.Drawing.Size(40, 40);
-            this.btn_news.TabIndex = 16;
-            this.btn_news.UseVisualStyleBackColor = false;
-            this.btn_news.Click += new System.EventHandler(this.button1_Click);
-            this.btn_news.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_news_MouseDown);
-            this.btn_news.MouseEnter += new System.EventHandler(this.btn_news_MouseEnter);
-            this.btn_news.MouseLeave += new System.EventHandler(this.btn_news_MouseLeave);
-            this.btn_news.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_news_MouseUp);
-            // 
-            // btn_playGame
-            // 
-            this.btn_playGame.AutoSize = true;
-            this.btn_playGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_playGame.BackgroundImage = global::ESSU.Properties.Resources.play;
-            this.btn_playGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_playGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_playGame.FlatAppearance.BorderSize = 0;
-            this.btn_playGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_playGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_playGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_playGame.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_playGame.ForeColor = System.Drawing.Color.White;
-            this.btn_playGame.Location = new System.Drawing.Point(318, 353);
-            this.btn_playGame.Name = "btn_playGame";
-            this.btn_playGame.Size = new System.Drawing.Size(40, 40);
-            this.btn_playGame.TabIndex = 9;
-            this.btn_playGame.UseVisualStyleBackColor = false;
-            this.btn_playGame.Click += new System.EventHandler(this.btn_playGame_Click);
-            this.btn_playGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_playGame_MouseDown);
-            this.btn_playGame.MouseEnter += new System.EventHandler(this.btn_playGame_MouseEnter);
-            this.btn_playGame.MouseLeave += new System.EventHandler(this.btn_playGame_MouseLeave);
-            this.btn_playGame.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_playGame_MouseUp);
-            // 
-            // btn_community
-            // 
-            this.btn_community.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_community.AutoSize = true;
-            this.btn_community.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_community.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_community.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_community.FlatAppearance.BorderSize = 0;
-            this.btn_community.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_community.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_community.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_community.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_community.Location = new System.Drawing.Point(934, 93);
-            this.btn_community.Name = "btn_community";
-            this.btn_community.Size = new System.Drawing.Size(152, 47);
-            this.btn_community.TabIndex = 13;
-            this.btn_community.Text = "Community Hub";
-            this.btn_community.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_community.UseVisualStyleBackColor = false;
-            this.btn_community.Click += new System.EventHandler(this.btn_community_Click);
-            // 
-            // btn_storePage
-            // 
-            this.btn_storePage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_storePage.AutoSize = true;
-            this.btn_storePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_storePage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_storePage.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_storePage.FlatAppearance.BorderSize = 0;
-            this.btn_storePage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_storePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_storePage.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_storePage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_storePage.Location = new System.Drawing.Point(934, 285);
-            this.btn_storePage.Name = "btn_storePage";
-            this.btn_storePage.Size = new System.Drawing.Size(152, 47);
-            this.btn_storePage.TabIndex = 11;
-            this.btn_storePage.Text = "Store Page";
-            this.btn_storePage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_storePage.UseVisualStyleBackColor = false;
-            this.btn_storePage.Click += new System.EventHandler(this.btn_storePage_Click);
-            // 
-            // lbl_gameTitle
-            // 
-            this.lbl_gameTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_gameTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.lbl_gameTitle.Font = new System.Drawing.Font("Segoe UI", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gameTitle.ForeColor = System.Drawing.Color.White;
-            this.lbl_gameTitle.Location = new System.Drawing.Point(306, -1);
-            this.lbl_gameTitle.Name = "lbl_gameTitle";
-            this.lbl_gameTitle.Size = new System.Drawing.Size(829, 40);
-            this.lbl_gameTitle.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(306, 411);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(619, 65);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "\r\n               Friends That Play This Game";
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -966,77 +1049,13 @@ namespace ESSU
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(931, 47);
+            this.label3.Location = new System.Drawing.Point(631, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 643);
+            this.label3.Size = new System.Drawing.Size(211, 701);
             this.label3.TabIndex = 19;
-            this.label3.Text = "\r\n_______________\r\n\r\n_______________\r\n\r\n_______________\r\n\r\n_______________\r\n\r\n___" +
-    "____________\r\n\r\n_______________\r\n\r\n_______________\r\n\r\n_______________\r\n\r\n_______" +
-    "________";
-            // 
-            // list_games
-            // 
-            this.list_games.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.list_games.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.list_games.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.list_games.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.list_games.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.list_games.ForeColor = System.Drawing.Color.White;
-            this.list_games.FormattingEnabled = true;
-            this.list_games.IntegralHeight = false;
-            this.list_games.ItemHeight = 20;
-            this.list_games.Location = new System.Drawing.Point(0, 47);
-            this.list_games.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.list_games.Name = "list_games";
-            this.list_games.Size = new System.Drawing.Size(300, 641);
-            this.list_games.TabIndex = 2;
-            this.list_games.Click += new System.EventHandler(this.list_games_Click);
-            this.list_games.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.list_games_DrawItem);
-            this.list_games.SelectedIndexChanged += new System.EventHandler(this.list_games_SelectedIndexChanged);
-            this.list_games.DoubleClick += new System.EventHandler(this.btn_playGame_Click);
-            this.list_games.KeyUp += new System.Windows.Forms.KeyEventHandler(this.list_games_KeyUp);
-            this.list_games.MouseDown += new System.Windows.Forms.MouseEventHandler(this.list_games_MouseDown);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(306, 481);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(619, 65);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "\r\n               Achievements";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(306, 622);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(619, 65);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "\r\n               News About This Game";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(306, 552);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(619, 65);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "\r\n               Workshop";
+            this.label3.Text = "\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n___________" +
+    "__\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n\r\n\r\n__" +
+    "___________";
             // 
             // label8
             // 
@@ -1045,11 +1064,38 @@ namespace ESSU
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(306, 341);
+            this.label8.Location = new System.Drawing.Point(0, 334);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(619, 65);
+            this.label8.Size = new System.Drawing.Size(626, 65);
             this.label8.TabIndex = 41;
             this.label8.Text = "\r\n               Play Game";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 404);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(626, 65);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "\r\n               Friends That Play This Game";
+            // 
+            // lbl_newsTitle
+            // 
+            this.lbl_newsTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_newsTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.lbl_newsTitle.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_newsTitle.ForeColor = System.Drawing.Color.White;
+            this.lbl_newsTitle.Location = new System.Drawing.Point(0, 615);
+            this.lbl_newsTitle.Name = "lbl_newsTitle";
+            this.lbl_newsTitle.Size = new System.Drawing.Size(626, 72);
+            this.lbl_newsTitle.TabIndex = 36;
+            this.lbl_newsTitle.Text = "\r\n               News About This Game";
             // 
             // label6
             // 
@@ -1059,29 +1105,18 @@ namespace ESSU
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(306, 336);
+            this.label6.Location = new System.Drawing.Point(-10, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(619, 351);
+            this.label6.Size = new System.Drawing.Size(642, 332);
             this.label6.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(300, 39);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "\r\n";
             // 
             // picture_game_preview
             // 
             this.picture_game_preview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picture_game_preview.Location = new System.Drawing.Point(306, 47);
+            this.picture_game_preview.Location = new System.Drawing.Point(0, 48);
             this.picture_game_preview.Name = "picture_game_preview";
-            this.picture_game_preview.Size = new System.Drawing.Size(619, 282);
+            this.picture_game_preview.Size = new System.Drawing.Size(627, 282);
             this.picture_game_preview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_game_preview.TabIndex = 32;
             this.picture_game_preview.TabStop = false;
@@ -1559,7 +1594,7 @@ namespace ESSU
             this.resizeR.ForeColor = System.Drawing.Color.White;
             this.resizeR.Location = new System.Drawing.Point(1104, 41);
             this.resizeR.Name = "resizeR";
-            this.resizeR.Size = new System.Drawing.Size(11, 685);
+            this.resizeR.Size = new System.Drawing.Size(10, 685);
             this.resizeR.TabIndex = 7;
             this.resizeR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.resizeR.MouseDown += new System.Windows.Forms.MouseEventHandler(this.resize_MouseDown);
@@ -1748,12 +1783,46 @@ namespace ESSU
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(235, 6);
             // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(633, 546);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 25);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Categories";
+            // 
+            // btn_setCat
+            // 
+            this.btn_setCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_setCat.AutoSize = true;
+            this.btn_setCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_setCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_setCat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_setCat.FlatAppearance.BorderSize = 0;
+            this.btn_setCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_setCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_setCat.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_setCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.btn_setCat.Location = new System.Drawing.Point(635, 574);
+            this.btn_setCat.Name = "btn_setCat";
+            this.btn_setCat.Size = new System.Drawing.Size(131, 47);
+            this.btn_setCat.TabIndex = 44;
+            this.btn_setCat.Text = "Set Category";
+            this.btn_setCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_setCat.UseVisualStyleBackColor = false;
+            this.btn_setCat.Click += new System.EventHandler(this.addToToolStripMenuItem_Click);
+            // 
             // Main_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1115, 750);
+            this.Controls.Add(this.panel_browser);
             this.Controls.Add(this.resizeR);
             this.Controls.Add(this.resizeL);
             this.Controls.Add(this.panel_Libary);
@@ -1775,6 +1844,8 @@ namespace ESSU
             this.panel_Libary.ResumeLayout(false);
             this.panel_Libary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_library_details.ResumeLayout(false);
+            this.panel_library_details.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_game_preview)).EndInit();
             this.context_notification.ResumeLayout(false);
             this.context_gameMenu.ResumeLayout(false);
@@ -1871,7 +1942,7 @@ namespace ESSU
         private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem1;
         private System.Windows.Forms.PictureBox picture_game_preview;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_newsTitle;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_playGame;
@@ -1910,6 +1981,10 @@ namespace ESSU
         private System.Windows.Forms.ToolStripMenuItem playersToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ToolStripMenuItem reviewsToolStripMenuItem;
+        private System.Windows.Forms.Panel panel_library_details;
+        private System.Windows.Forms.Label lbl_newsParagraph;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_setCat;
     }
 }
 

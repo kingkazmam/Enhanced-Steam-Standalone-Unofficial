@@ -102,6 +102,12 @@
     <Compile Include="Friends Window.Designer.cs">
       <DependentUpon>Friends Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="Music Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music Player.Designer.cs">
+      <DependentUpon>Music Player.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

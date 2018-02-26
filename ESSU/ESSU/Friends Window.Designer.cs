@@ -47,8 +47,8 @@ namespace ESSU
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Friends_Window));
             this.btn_min = new System.Windows.Forms.Button();
             this.panel_topbar = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.resize = new System.Windows.Forms.Label();
@@ -69,9 +69,9 @@ namespace ESSU
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(419, 0);
+            this.btn_min.Location = new System.Drawing.Point(227, 0);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(40, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 47);
             this.btn_min.TabIndex = 2;
             this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
@@ -81,26 +81,15 @@ namespace ESSU
             this.panel_topbar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel_topbar.Controls.Add(this.btn_exit);
             this.panel_topbar.Controls.Add(this.label1);
             this.panel_topbar.Controls.Add(this.btn_min);
-            this.panel_topbar.Controls.Add(this.btn_exit);
             this.panel_topbar.Location = new System.Drawing.Point(0, 0);
             this.panel_topbar.Name = "panel_topbar";
-            this.panel_topbar.Size = new System.Drawing.Size(500, 40);
+            this.panel_topbar.Size = new System.Drawing.Size(305, 40);
             this.panel_topbar.TabIndex = 3;
             this.panel_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.panel_topbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "FRIENDS";
             // 
             // btn_exit
             // 
@@ -115,12 +104,23 @@ namespace ESSU
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_exit.Location = new System.Drawing.Point(459, 0);
+            this.btn_exit.Location = new System.Drawing.Point(264, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 0;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 32);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "FRIENDS";
             // 
             // panel_body
             // 
@@ -130,7 +130,7 @@ namespace ESSU
             this.panel_body.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel_body.Location = new System.Drawing.Point(12, 11);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(476, 389);
+            this.panel_body.Size = new System.Drawing.Size(281, 389);
             this.panel_body.TabIndex = 4;
             // 
             // panel1
@@ -143,7 +143,7 @@ namespace ESSU
             this.panel1.Controls.Add(this.resize);
             this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 414);
+            this.panel1.Size = new System.Drawing.Size(305, 414);
             this.panel1.TabIndex = 5;
             // 
             // resize
@@ -154,7 +154,7 @@ namespace ESSU
             this.resize.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resize.ForeColor = System.Drawing.Color.White;
             this.resize.Image = global::ESSU.Properties.Resources.resizer;
-            this.resize.Location = new System.Drawing.Point(470, 385);
+            this.resize.Location = new System.Drawing.Point(275, 385);
             this.resize.Name = "resize";
             this.resize.Size = new System.Drawing.Size(43, 36);
             this.resize.TabIndex = 5;
@@ -166,7 +166,7 @@ namespace ESSU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 450);
+            this.ClientSize = new System.Drawing.Size(305, 450);
             this.Controls.Add(this.panel_topbar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

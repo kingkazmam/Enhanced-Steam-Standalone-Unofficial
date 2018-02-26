@@ -70,3 +70,28 @@ D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSU\ESSU\obj\x64\Release\E
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb
 D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSU\ESSU\obj\x64\Release\ESSU.Bookmarks.resources
+D:\ESSU\ESSU\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe.config
+D:\ESSU\ESSU\bin\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\ESSU\ESSU\bin\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.Core.dll
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.dll
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.WinForms.dll
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.WinForms.pdb
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.WinForms.xml
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.pdb
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.xml
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.Core.pdb
+D:\ESSU\ESSU\bin\x64\Release\CefSharp.Core.xml
+D:\ESSU\ESSU\obj\x64\Release\ESSU.csprojResolveAssemblyReference.cache
+D:\ESSU\ESSU\obj\x64\Release\Interop.SHDocVw.dll
+D:\ESSU\ESSU\obj\x64\Release\ESSU.csproj.ResolveComReference.cache
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Bookmarks.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Categories.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Main_Window.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Friends_Window.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Properties.Resources.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.Settings_Window.resources
+D:\ESSU\ESSU\obj\x64\Release\ESSU.csproj.GenerateResource.Cache
+D:\ESSU\ESSU\obj\x64\Release\ESSU.csproj.CoreCompileInputs.cache
+D:\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
+D:\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb

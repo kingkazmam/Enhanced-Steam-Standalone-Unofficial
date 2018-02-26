@@ -137,9 +137,9 @@ namespace ESSU
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(312, 0);
+            this.btn_min.Location = new System.Drawing.Point(312, -4);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(40, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 58);
             this.btn_min.TabIndex = 2;
             this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
@@ -403,13 +403,17 @@ namespace ESSU
             // 
             this.list_libraries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.list_libraries.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.list_libraries.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.list_libraries.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.list_libraries.ForeColor = System.Drawing.Color.White;
             this.list_libraries.FormattingEnabled = true;
+            this.list_libraries.IntegralHeight = false;
             this.list_libraries.ItemHeight = 15;
             this.list_libraries.Location = new System.Drawing.Point(18, 35);
             this.list_libraries.Name = "list_libraries";
             this.list_libraries.Size = new System.Drawing.Size(334, 92);
             this.list_libraries.TabIndex = 3;
+            this.list_libraries.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.list_games_DrawItem);
             // 
             // label3
             // 
@@ -440,7 +444,7 @@ namespace ESSU
             // 
             this.btn_music_add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.btn_music_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_music_add.Location = new System.Drawing.Point(207, 134);
+            this.btn_music_add.Location = new System.Drawing.Point(207, 195);
             this.btn_music_add.Name = "btn_music_add";
             this.btn_music_add.Size = new System.Drawing.Size(63, 28);
             this.btn_music_add.TabIndex = 9;
@@ -452,7 +456,7 @@ namespace ESSU
             // 
             this.btn_music_remove.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.btn_music_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_music_remove.Location = new System.Drawing.Point(276, 134);
+            this.btn_music_remove.Location = new System.Drawing.Point(276, 195);
             this.btn_music_remove.Name = "btn_music_remove";
             this.btn_music_remove.Size = new System.Drawing.Size(76, 28);
             this.btn_music_remove.TabIndex = 8;
@@ -464,13 +468,17 @@ namespace ESSU
             // 
             this.list_music.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.list_music.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.list_music.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.list_music.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.list_music.ForeColor = System.Drawing.Color.White;
             this.list_music.FormattingEnabled = true;
+            this.list_music.IntegralHeight = false;
             this.list_music.ItemHeight = 15;
             this.list_music.Location = new System.Drawing.Point(18, 35);
             this.list_music.Name = "list_music";
-            this.list_music.Size = new System.Drawing.Size(334, 92);
+            this.list_music.Size = new System.Drawing.Size(334, 154);
             this.list_music.TabIndex = 7;
+            this.list_music.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.list_games_DrawItem);
             // 
             // label9
             // 

@@ -64,13 +64,12 @@ namespace ESSU
             this.panel_topbar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.panel_topbar.Controls.Add(this.label2);
             this.panel_topbar.Controls.Add(this.label1);
             this.panel_topbar.Controls.Add(this.btn_min);
             this.panel_topbar.Controls.Add(this.btn_exit);
             this.panel_topbar.Location = new System.Drawing.Point(0, 0);
             this.panel_topbar.Name = "panel_topbar";
-            this.panel_topbar.Size = new System.Drawing.Size(480, 55);
+            this.panel_topbar.Size = new System.Drawing.Size(480, 40);
             this.panel_topbar.TabIndex = 4;
             this.panel_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.panel_topbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
@@ -80,7 +79,7 @@ namespace ESSU
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 35);
+            this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 20);
             this.label2.TabIndex = 4;
@@ -110,9 +109,9 @@ namespace ESSU
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(400, 0);
+            this.btn_min.Location = new System.Drawing.Point(400, -4);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(40, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 55);
             this.btn_min.TabIndex = 5;
             this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
@@ -222,6 +221,7 @@ namespace ESSU
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(480, 380);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

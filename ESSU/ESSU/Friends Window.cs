@@ -36,6 +36,7 @@ namespace ESSU
             InitializeComponent();
             initbrowser();
         }
+        
 
         ChromiumWebBrowser friendsChat = new ChromiumWebBrowser("https://steamcommunity.com//chat/");
         private void initbrowser()
@@ -85,16 +86,5 @@ namespace ESSU
         {
             WindowState = FormWindowState.Minimized;
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            label1.Text = this.Height.ToString();
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-            label1.Text = this.Width.ToString();
-        }
-
     }
 }

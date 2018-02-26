@@ -31,6 +31,42 @@ namespace ESSU
 {
     public partial class Settings_Window : Form
     {
+
+        private void list_games_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            ListBox c = sender as ListBox;
+            SolidBrush reportsForegroundBrushSelected = new SolidBrush(Color.FromArgb(255, 255, 255, 255));
+            SolidBrush reportsForegroundBrush = new SolidBrush(Color.White);
+            SolidBrush reportsForegroundBrush2 = new SolidBrush(Color.Gray);
+            SolidBrush reportsBackgroundBrushSelected = new SolidBrush(Color.FromArgb(255, 102, 36, 226));
+            SolidBrush reportsBackgroundBrush1 = new SolidBrush(Color.FromArgb(255, 39, 39, 39));
+            e.DrawBackground();
+            bool selected = ((e.State & DrawItemState.Selected) == DrawItemState.Selected);
+
+            int index = e.Index;
+
+            if (index >= 0 && index < c.Items.Count)
+            {
+                string text = c.Items[index].ToString();
+
+                Graphics g = e.Graphics;
+
+                //background:
+                SolidBrush backgroundBrush;
+                if (selected)
+                    backgroundBrush = reportsBackgroundBrushSelected;
+                else
+                    backgroundBrush = reportsBackgroundBrush1;
+
+                g.FillRectangle(backgroundBrush, e.Bounds);
+                //text:
+                SolidBrush foregroundBrush = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush;
+                SolidBrush foregroundBrush2 = (selected) ? reportsForegroundBrushSelected : reportsForegroundBrush2;
+                g.DrawString(text, e.Font, foregroundBrush, e.Bounds);
+            }
+            e.DrawFocusRectangle();
+        }
+
         public Settings_Window()
         {
             InitializeComponent();
@@ -102,6 +138,10 @@ namespace ESSU
             {
                 settingsFile = settingsFile + "steamappdir:" + dir + end;
             }
+            foreach (string dir in list_music.Items)
+            {
+                settingsFile = settingsFile + "musicdir:" + dir + end;
+            }
             settingsFile = settingsFile + "steamexe:" + txt_steamLocation.Text + end;
             File.WriteAllText(Application.StartupPath + "\\settings.cfg", settingsFile);
             if (check_runAtStartup.Checked)
@@ -148,6 +188,11 @@ namespace ESSU
                 if (i == null) return;
                 list_libraries.Items.Add(i);
             }
+            foreach (string i in Settings.musicDirectories)
+            {
+                if (i == null) return;
+                list_music.Items.Add(i);
+            }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -183,7 +228,7 @@ namespace ESSU
         private void btn_music_add_Click(object sender, EventArgs e)
         {
             folder.ShowDialog();
-            if (Directory.Exists(folder.SelectedPath) && folder.SelectedPath.EndsWith("steamapps") && !list_music.Items.Contains(folder.SelectedPath)) { list_music.Items.Add(folder.SelectedPath); }
+            if (Directory.Exists(folder.SelectedPath) && !list_music.Items.Contains(folder.SelectedPath)) { list_music.Items.Add(folder.SelectedPath); }
             else { MessageBox.Show("Directory doesn't exist, invalid, or is already selected."); }
         }
 

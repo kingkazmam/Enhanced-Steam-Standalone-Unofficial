@@ -68,13 +68,12 @@ namespace ESSU
             this.panel_topbar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.panel_topbar.Controls.Add(this.label2);
             this.panel_topbar.Controls.Add(this.label1);
             this.panel_topbar.Controls.Add(this.btn_min);
             this.panel_topbar.Controls.Add(this.btn_exit);
             this.panel_topbar.Location = new System.Drawing.Point(0, 0);
             this.panel_topbar.Name = "panel_topbar";
-            this.panel_topbar.Size = new System.Drawing.Size(480, 55);
+            this.panel_topbar.Size = new System.Drawing.Size(480, 40);
             this.panel_topbar.TabIndex = 4;
             this.panel_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.panel_topbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
@@ -84,7 +83,7 @@ namespace ESSU
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 35);
+            this.label2.Location = new System.Drawing.Point(10, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(355, 20);
             this.label2.TabIndex = 4;
@@ -114,9 +113,10 @@ namespace ESSU
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_min.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_min.Location = new System.Drawing.Point(399, 0);
+            this.btn_min.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_min.Location = new System.Drawing.Point(400, 0);
             this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(40, 40);
+            this.btn_min.Size = new System.Drawing.Size(40, 52);
             this.btn_min.TabIndex = 8;
             this.btn_min.UseVisualStyleBackColor = false;
             this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
@@ -135,7 +135,7 @@ namespace ESSU
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Webdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_exit.Location = new System.Drawing.Point(439, 0);
+            this.btn_exit.Location = new System.Drawing.Point(440, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(40, 40);
             this.btn_exit.TabIndex = 9;
@@ -145,6 +145,7 @@ namespace ESSU
             // list_games
             // 
             this.list_games.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.list_games.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.list_games.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.list_games.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.list_games.ForeColor = System.Drawing.Color.White;
@@ -172,6 +173,7 @@ namespace ESSU
             // 
             // button3
             // 
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(128, 6);
@@ -184,6 +186,7 @@ namespace ESSU
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(14, 6);
@@ -196,6 +199,7 @@ namespace ESSU
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(371, 6);
@@ -215,6 +219,7 @@ namespace ESSU
             // 
             // btn_add
             // 
+            this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.Location = new System.Drawing.Point(371, 317);
@@ -227,6 +232,7 @@ namespace ESSU
             // 
             // btn_mvUp
             // 
+            this.btn_mvUp.FlatAppearance.BorderSize = 0;
             this.btn_mvUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mvUp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mvUp.Location = new System.Drawing.Point(447, 61);
@@ -240,6 +246,7 @@ namespace ESSU
             // 
             // btn_mvDown
             // 
+            this.btn_mvDown.FlatAppearance.BorderSize = 0;
             this.btn_mvDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mvDown.Font = new System.Drawing.Font("Segoe UI Semilight", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mvDown.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -258,6 +265,7 @@ namespace ESSU
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(480, 388);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_mvDown);
             this.Controls.Add(this.btn_mvUp);
             this.Controls.Add(this.btn_add);

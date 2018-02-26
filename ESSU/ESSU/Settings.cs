@@ -38,7 +38,8 @@ namespace ESSU
         public static string tempName = "";
 
         public static string[] steamDirectories = new string[10000];
-        
+        public static string[] musicDirectories = new string[10000];
+
         public static string steamEXE = "C:\\Program Files (x86)\\Steam\\Steam.exe";
         public static string lang = "English";
         public static string startwin = "Store";
@@ -61,6 +62,7 @@ namespace ESSU
         public static void loadSettings()
         {
             int sDirCounter = 0;
+            int sDirCounter2 = 0;
             steamDirectories[sDirCounter] = "C:\\Program Files (x86)\\Steam\\steamapps";
             try
             {
@@ -69,6 +71,7 @@ namespace ESSU
                     string language = "lang:";
                     string startwi = "startwin:";
                     string steamappdir = "steamappdir:";
+                    string musicdir = "musicappdir:";
                     string steame = "steamexe:";
                     string runbo = "runboot:";
 
@@ -87,6 +90,7 @@ namespace ESSU
                     if (line.Contains(language)) lang = line.Substring(language.Length);
                     if (line.Contains(startwi)) startwin = line.Substring(startwi.Length);
                     if (line.Contains(steamappdir)) { steamDirectories[sDirCounter] = line.Substring(steamappdir.Length); sDirCounter++; }
+                    if (line.Contains(musicdir)) { musicDirectories[sDirCounter2] = line.Substring(musicdir.Length); sDirCounter2++; }
                     if (line.Contains(steame)) steamEXE = line.Substring(steame.Length);
                 }
                 return;

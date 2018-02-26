@@ -157,7 +157,21 @@ namespace ESSU
                 loadImage(gameArray[list_games.SelectedIndex, 0]);
             }
             catch { }
+            //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             
+        }
+
+        public static String code(string Url)
+        {
+            HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(Url);
+            myRequest.Method = "GET";
+            WebResponse myResponse = myRequest.GetResponse();
+            StreamReader sr = new StreamReader(myResponse.GetResponseStream(), System.Text.Encoding.UTF8);
+            string result = sr.ReadToEnd();
+            sr.Close();
+            myResponse.Close();
+
+            return result;
         }
 
         private class MyRenderer : ToolStripProfessionalRenderer
@@ -259,7 +273,7 @@ namespace ESSU
                     catch { }
                 }
             }
-            panel_browser.Left = 0;
+            panel_browser.Left = 11;
             panel_browser.BringToFront();
             vivaldi = Process.Start("vivaldi.exe", "--force-renderer-accessibility " + url);
             while (vivaldi.MainWindowHandle == (IntPtr)0) { };
@@ -270,7 +284,11 @@ namespace ESSU
 
         private void refresh_Tick(object sender, EventArgs e)
         {
-            if (list_games.SelectedIndex == -1) list_games.SelectedIndex = lastSelected;
+            try
+            {
+                if (list_games.SelectedIndex == -1) list_games.SelectedIndex = lastSelected;
+            } catch { }
+            
             int[] index = new int[list_games.Items.Count];
             if (Settings.tempName == "startRefresh")
             {
@@ -417,7 +435,7 @@ namespace ESSU
         {
             steamGameListUpdate();
             setActiveFromPanel(btn_library, btn_Store, btn_commuity, btn_user);
-            panel_browser.Left = panel_Libary.Width + 10000;
+            panel_browser.Left = panel_Libary.Width + 100;
             list_games.Focus();
             //txt_searchForGame.Focus();
         }
@@ -536,7 +554,6 @@ namespace ESSU
 
         private void btn_playGame_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 if (list_games.SelectedIndex == -1) return;
@@ -1247,9 +1264,20 @@ namespace ESSU
 
         bool Installed = false;
 
+        int IndexOfSecond(string theString, string toFind)
+        {
+            int first = theString.IndexOf(toFind);
+            if (first == -1) return -1;
+
+            // Find the "next" occurrence by starting just past the first
+            return theString.IndexOf(toFind, first + 1);
+
+        }
         private void list_games_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (list_games.SelectedIndex != -1) lastSelected = list_games.SelectedIndex;
+            //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            try { if (list_games.SelectedIndex != -1) lastSelected = list_games.SelectedIndex; } catch { }
             if (list_games.SelectedIndex == -1) 
             {
                 picture_game_preview.Image = null;
@@ -1265,10 +1293,34 @@ namespace ESSU
                     {
                         loadImage(gameArray[i, 1]);
                         lbl_gameTitle.Text = gameArray[i, 3];
+
+                        string title = code("http://store.steampowered.com/news/?appids=" + gameArray[i, 1]);
+                        //title = title.Replace("\n\n", "");
+                        
+                        title = Regex.Replace(title, "<.*?>", String.Empty);
+                        title = Regex.Replace(title, @"<a\b[^>]+>([^<]*(?:(?!</a)<[^<]*)*)</a>", "$1");
+                        title = Regex.Replace(title, "Share:", String.Empty);
+
+                        title = title.Substring(title.IndexOf("Headlines") + 105);
+                        title = Regex.Replace(title, "#.*?;", String.Empty);
+                        title = Regex.Replace(title, "nbsp;", " ");
+                        title = Regex.Replace(title, "apos;", "'");
+                        title = Regex.Replace(title, "amp;", "&");
+                        title = Regex.Replace(title, "quot;", "\"");
+                        title = title.Replace("(more&hellip;)", "[Read More]");
+                        
+                        title = title.Substring(0, title.IndexOf(Environment.NewLine + "						&"));
+                        if (title.Contains("<a href="))
+                        {
+                            string rep = title.Substring(title.IndexOf("<a href="), title.IndexOf("\">") - 47);
+                            title = title.Replace(rep, "");
+                        }
+                        if (title.Length > 1000) title = title.Substring(0, 1000) + "...\n\n";
+                        lbl_newsParagraph.Text = title;
+                        panel_library_details.AutoScrollMargin = new Size(0, lbl_newsParagraph.Height);
+
                         if (!string.IsNullOrEmpty(gameArray[i, 2])) { btn_playGame.BackgroundImage = ESSU.Properties.Resources.play; Installed = true; label8.Text = "\n               Play Game"; }
                         else { btn_playGame.BackgroundImage = ESSU.Properties.Resources.install; Installed = false; label8.Text = "\n               Install Game"; }
-
-                       
                         return;   
                     }
                     else
@@ -1280,8 +1332,9 @@ namespace ESSU
                 }
                 
             }
-            catch
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
             }
             
         }
@@ -1358,6 +1411,7 @@ namespace ESSU
                         l = l.Replace("</div>", string.Empty);
                         l = l.Replace("	", string.Empty);
                         l = l.Replace("™", string.Empty);
+                       
                         webGameArray[indexGame, 1] = l;
                         indexGame++;
                     }
