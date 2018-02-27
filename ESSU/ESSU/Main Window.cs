@@ -1080,9 +1080,9 @@ namespace ESSU
                 }
 
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.ToString());
+                
             }
 
         }
