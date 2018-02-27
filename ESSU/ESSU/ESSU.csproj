@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="enhancedsteam32.ico" />
+    <None Include="Resources\cover.png" />
     <None Include="Resources\win32_win_restore.png" />
     <None Include="Resources\win32_win_min.png" />
     <None Include="Resources\win32_win_max.png" />

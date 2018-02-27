@@ -72,6 +72,8 @@ namespace ESSU
             this.list_games = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_library_details = new System.Windows.Forms.Panel();
+            this.btn_setCat = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.lbl_newsParagraph = new System.Windows.Forms.Label();
             this.lbl_gameTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -170,8 +172,6 @@ namespace ESSU
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.playersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_setCat = new System.Windows.Forms.Button();
             this.panel_topbar.SuspendLayout();
             this.panel_bottombar.SuspendLayout();
             this.panel_Libary.SuspendLayout();
@@ -666,6 +666,39 @@ namespace ESSU
             this.panel_library_details.Size = new System.Drawing.Size(788, 688);
             this.panel_library_details.TabIndex = 45;
             // 
+            // btn_setCat
+            // 
+            this.btn_setCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_setCat.AutoSize = true;
+            this.btn_setCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_setCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_setCat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_setCat.FlatAppearance.BorderSize = 0;
+            this.btn_setCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btn_setCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_setCat.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_setCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
+            this.btn_setCat.Location = new System.Drawing.Point(635, 574);
+            this.btn_setCat.Name = "btn_setCat";
+            this.btn_setCat.Size = new System.Drawing.Size(131, 47);
+            this.btn_setCat.TabIndex = 44;
+            this.btn_setCat.Text = "Set Category";
+            this.btn_setCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_setCat.UseVisualStyleBackColor = false;
+            this.btn_setCat.Click += new System.EventHandler(this.addToToolStripMenuItem_Click);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(633, 546);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 25);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Categories";
+            // 
             // lbl_newsParagraph
             // 
             this.lbl_newsParagraph.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -926,7 +959,7 @@ namespace ESSU
             this.btn_news2.Text = "News";
             this.btn_news2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_news2.UseVisualStyleBackColor = false;
-            this.btn_news2.Click += new System.EventHandler(this.button1_Click);
+            this.btn_news2.Click += new System.EventHandler(this.news_Click);
             // 
             // btn_playGame
             // 
@@ -991,7 +1024,7 @@ namespace ESSU
             this.btn_news.Size = new System.Drawing.Size(40, 40);
             this.btn_news.TabIndex = 16;
             this.btn_news.UseVisualStyleBackColor = false;
-            this.btn_news.Click += new System.EventHandler(this.button1_Click);
+            this.btn_news.Click += new System.EventHandler(this.news_Click);
             this.btn_news.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_news_MouseDown);
             this.btn_news.MouseEnter += new System.EventHandler(this.btn_news_MouseEnter);
             this.btn_news.MouseLeave += new System.EventHandler(this.btn_news_MouseLeave);
@@ -1051,7 +1084,7 @@ namespace ESSU
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(631, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 701);
+            this.label3.Size = new System.Drawing.Size(211, 751);
             this.label3.TabIndex = 19;
             this.label3.Text = "\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n___________" +
     "__\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n\r\n\r\n__" +
@@ -1093,7 +1126,7 @@ namespace ESSU
             this.lbl_newsTitle.ForeColor = System.Drawing.Color.White;
             this.lbl_newsTitle.Location = new System.Drawing.Point(0, 615);
             this.lbl_newsTitle.Name = "lbl_newsTitle";
-            this.lbl_newsTitle.Size = new System.Drawing.Size(626, 72);
+            this.lbl_newsTitle.Size = new System.Drawing.Size(626, 122);
             this.lbl_newsTitle.TabIndex = 36;
             this.lbl_newsTitle.Text = "\r\n               News About This Game";
             // 
@@ -1107,7 +1140,7 @@ namespace ESSU
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(-10, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(642, 332);
+            this.label6.Size = new System.Drawing.Size(642, 382);
             this.label6.TabIndex = 37;
             // 
             // picture_game_preview
@@ -1206,7 +1239,7 @@ namespace ESSU
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(199, 22);
             this.toolStripMenuItem4.Text = "View News";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.button1_Click);
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.news_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -1782,39 +1815,6 @@ namespace ESSU
             this.toolStripSeparator10.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(235, 6);
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(633, 546);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 25);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Categories";
-            // 
-            // btn_setCat
-            // 
-            this.btn_setCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_setCat.AutoSize = true;
-            this.btn_setCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_setCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_setCat.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_setCat.FlatAppearance.BorderSize = 0;
-            this.btn_setCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btn_setCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_setCat.Font = new System.Drawing.Font("Segoe UI", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_setCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(137)))), ((int)(((byte)(137)))));
-            this.btn_setCat.Location = new System.Drawing.Point(635, 574);
-            this.btn_setCat.Name = "btn_setCat";
-            this.btn_setCat.Size = new System.Drawing.Size(131, 47);
-            this.btn_setCat.TabIndex = 44;
-            this.btn_setCat.Text = "Set Category";
-            this.btn_setCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_setCat.UseVisualStyleBackColor = false;
-            this.btn_setCat.Click += new System.EventHandler(this.addToToolStripMenuItem_Click);
             // 
             // Main_Window
             // 
