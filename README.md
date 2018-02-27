@@ -5,7 +5,7 @@ Enhanced Steam Standalone Unofficial is a shell made by [darc phansea](http://st
 
 ![](header.png)
 
-##Pre-Installation
+## Pre-Installation
 
 1. This uses .NET Framework 4.6.1 so yeah install that.
 
