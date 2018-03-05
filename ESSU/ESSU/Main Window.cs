@@ -87,7 +87,6 @@ namespace ESSU
             context_profile.Renderer = new MyRenderer();
             context_store.Renderer = new MyRenderer();
             context_tray.Renderer = new MyRenderer();
-
             switch (Settings.startwin) //What window is defaulted to open
             {
                 case "Store":
@@ -146,6 +145,13 @@ namespace ESSU
                         l = l.Replace(" :: Games</title>", string.Empty);
                         if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
                         btn_user.Text = l;
+                    }
+                    if (line.Contains("Wallet"))
+                    {
+                        string l = line;
+                        l = l.Replace("Wallet <b>(", string.Empty);
+                        l = l.Replace(")</b>", string.Empty);
+                        btn_account.Text = l;
                     }
                 }
             }
@@ -553,6 +559,19 @@ namespace ESSU
 
         private void refresh_Tick(object sender, EventArgs e) //Thats a timer that runs 100 times a second, or at least thats what it says it does
         {
+            if (string.Format("{0:mm}", DateTime.Now).EndsWith("0") || string.Format("{0:mm}", DateTime.Now).EndsWith("5"))
+            {
+                File.WriteAllText(Application.StartupPath + "\\slient.starup", "");
+                try
+                {
+                    Process.Start(Application.StartupPath + "\\ESSULauncer.exe");
+                } catch { }
+            }
+            else if (string.Format("{0:mm}", DateTime.Now).EndsWith("1") || string.Format("{0:mm}", DateTime.Now).EndsWith("6"))
+            {
+                steamGameListUpdate();
+            }
+
             try
             {
                 if (list_games.SelectedIndex == -1) list_games.SelectedIndex = lastSelected; //always have atleast 1 game selected
@@ -597,7 +616,6 @@ namespace ESSU
             //always center the browser window
             try { MoveWindow(vivaldi.MainWindowHandle, 0, -28, panel_browser.Width, panel_browser.Height + 25, true); } catch { }
         }
-
 
         //Window Control Size and Shit--------------------------------------------------------------------------
         private void panel_MouseDown(object sender, MouseEventArgs e)
@@ -763,7 +781,7 @@ namespace ESSU
         {
             steamGameListUpdate();
             setActiveFromPanel(btn_library, btn_Store, btn_commuity, btn_user);
-            panel_browser.Left = panel_Libary.Width + 100;
+            panel_browser.Left = panel_Libary.Width + 10000;
             list_games.Focus();
             //txt_searchForGame.Focus();
         }
@@ -1032,7 +1050,6 @@ namespace ESSU
             {
                 picture_game_preview.Image = null;                                                                           //Show Image and Game Title
                 lbl_gameTitle.Text = string.Empty;
-                return;
             }
             try
             {
@@ -1578,9 +1595,7 @@ namespace ESSU
             context_tray.Hide();
         }
 
-        
-
-        //-Button Image changes based on hover click or normal---------------------------------------------------------------------------
+        //-Button Image changes based on hover click or normal--------------------------------------------------
         private void btn_playGame_MouseEnter(object sender, EventArgs e)
         {
             if (!Installed)

@@ -36,12 +36,12 @@ namespace ESSULauncher
         {
             InitializeComponent();
             initbrowser();
+            
         }
 
         ChromiumWebBrowser libUpdater = new ChromiumWebBrowser("http://steamcommunity.com/my/games/?tab=all");
         private void initbrowser()
         {
-
             this.Controls.Add(libUpdater);
             libUpdater.Parent = panel1;
             libUpdater.Dock = DockStyle.Fill;
@@ -58,7 +58,8 @@ namespace ESSULauncher
                     try
                     {
                         File.WriteAllText(Application.StartupPath + "\\library.txt", html);
-                        if (!File.Exists(Application.StartupPath + "\\es.su")) Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
+                        if (!File.Exists(Application.StartupPath + "\\es.su") && !File.Exists(Application.StartupPath + "\\slient.starup")) Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
+                        if (File.Exists(Application.StartupPath + "\\slient.starup")) File.Delete(Application.StartupPath + "\\slient.starup");
                     }
                     catch { }
                     Application.Exit();

@@ -40,11 +40,11 @@ namespace ESSULauncher
             try
             {
                 Process[] myProcesses = Process.GetProcessesByName("Enhanced Steam Standalone Unofficial");
-                if (myProcesses.Count() > 0)
+                if (myProcesses.Count() > 0 && !File.Exists(Application.StartupPath + "\\slient.starup"))
                 {
                     File.WriteAllText(Application.StartupPath + "\\es.su", "");
                 }
-                else
+                else 
                 {
                     Cef.EnableHighDPISupport();
                     var settings = new CefSettings()

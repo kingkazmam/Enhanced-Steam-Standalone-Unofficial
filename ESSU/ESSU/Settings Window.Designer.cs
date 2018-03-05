@@ -54,7 +54,6 @@ namespace ESSU
             this.tab_settings = new System.Windows.Forms.TabControl();
             this.tab_Inferface = new System.Windows.Forms.TabPage();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.check_addressBar = new System.Windows.Forms.CheckBox();
             this.check_runAtStartup = new System.Windows.Forms.CheckBox();
             this.combo_startupWindow = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -116,11 +115,11 @@ namespace ESSU
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 32);
+            this.label1.Size = new System.Drawing.Size(84, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "SETTINGS";
             // 
@@ -207,7 +206,6 @@ namespace ESSU
             // 
             this.tab_Inferface.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.tab_Inferface.Controls.Add(this.linkLabel2);
-            this.tab_Inferface.Controls.Add(this.check_addressBar);
             this.tab_Inferface.Controls.Add(this.check_runAtStartup);
             this.tab_Inferface.Controls.Add(this.combo_startupWindow);
             this.tab_Inferface.Controls.Add(this.label5);
@@ -234,18 +232,6 @@ namespace ESSU
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Recommended Skin For Steam";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // check_addressBar
-            // 
-            this.check_addressBar.AutoSize = true;
-            this.check_addressBar.Enabled = false;
-            this.check_addressBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.check_addressBar.Location = new System.Drawing.Point(9, 177);
-            this.check_addressBar.Name = "check_addressBar";
-            this.check_addressBar.Size = new System.Drawing.Size(313, 21);
-            this.check_addressBar.TabIndex = 9;
-            this.check_addressBar.Text = "Display steam url when available (Not Working)";
-            this.check_addressBar.UseVisualStyleBackColor = true;
             // 
             // check_runAtStartup
             // 
@@ -675,7 +661,6 @@ namespace ESSU
         private System.Windows.Forms.TabControl tab_settings;
         private System.Windows.Forms.TabPage tab_Inferface;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.CheckBox check_addressBar;
         private System.Windows.Forms.CheckBox check_runAtStartup;
         private System.Windows.Forms.ComboBox combo_startupWindow;
         private System.Windows.Forms.Label label5;

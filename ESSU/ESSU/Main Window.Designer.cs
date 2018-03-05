@@ -193,7 +193,7 @@ namespace ESSU
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_browser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.panel_browser.Location = new System.Drawing.Point(1120, 50);
+            this.panel_browser.Location = new System.Drawing.Point(10000, 50);
             this.panel_browser.Name = "panel_browser";
             this.panel_browser.Size = new System.Drawing.Size(1093, 691);
             this.panel_browser.TabIndex = 1;
@@ -300,9 +300,9 @@ namespace ESSU
             this.btn_account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_account.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_account.ForeColor = System.Drawing.Color.White;
-            this.btn_account.Location = new System.Drawing.Point(890, -4);
+            this.btn_account.Location = new System.Drawing.Point(855, -4);
             this.btn_account.Name = "btn_account";
-            this.btn_account.Size = new System.Drawing.Size(35, 47);
+            this.btn_account.Size = new System.Drawing.Size(70, 47);
             this.btn_account.TabIndex = 8;
             this.btn_account.Text = "$";
             this.btn_account.UseVisualStyleBackColor = false;
@@ -1084,7 +1084,7 @@ namespace ESSU
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(631, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 751);
+            this.label3.Size = new System.Drawing.Size(211, 791);
             this.label3.TabIndex = 19;
             this.label3.Text = "\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n___________" +
     "__\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n_____________\r\n\r\n\r\n\r\n__" +
@@ -1126,7 +1126,7 @@ namespace ESSU
             this.lbl_newsTitle.ForeColor = System.Drawing.Color.White;
             this.lbl_newsTitle.Location = new System.Drawing.Point(0, 615);
             this.lbl_newsTitle.Name = "lbl_newsTitle";
-            this.lbl_newsTitle.Size = new System.Drawing.Size(626, 122);
+            this.lbl_newsTitle.Size = new System.Drawing.Size(626, 162);
             this.lbl_newsTitle.TabIndex = 36;
             this.lbl_newsTitle.Text = "\r\n               News About This Game";
             // 
@@ -1140,7 +1140,7 @@ namespace ESSU
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(-10, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(642, 382);
+            this.label6.Size = new System.Drawing.Size(642, 422);
             this.label6.TabIndex = 37;
             // 
             // picture_game_preview

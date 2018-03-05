@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>enhancedsteam32.ico</ApplicationIcon>
+    <ApplicationIcon>steam_icon_Iy6_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -137,6 +137,9 @@
       <DependentUpon>Friends Window.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Music Player.resx">
+      <DependentUpon>Music Player.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -161,7 +164,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="enhancedsteam32.ico" />
+    <Content Include="steam_icon_Iy6_icon.ico" />
+    <Content Include="steam_icon_lsI_1.ico" />
     <None Include="Resources\cover.png" />
     <None Include="Resources\win32_win_restore.png" />
     <None Include="Resources\win32_win_min.png" />

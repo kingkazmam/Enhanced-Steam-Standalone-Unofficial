@@ -95,3 +95,4 @@ D:\ESSU\ESSU\obj\x64\Release\ESSU.csproj.GenerateResource.Cache
 D:\ESSU\ESSU\obj\x64\Release\ESSU.csproj.CoreCompileInputs.cache
 D:\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.exe
 D:\ESSU\ESSU\obj\x64\Release\Enhanced Steam Standalone Unofficial.pdb
+D:\GITHUB REPOS\Enhanced-Steam-Standalone-Unofficial\ESSU\ESSU\obj\x64\Release\ESSU.Music_Player.resources

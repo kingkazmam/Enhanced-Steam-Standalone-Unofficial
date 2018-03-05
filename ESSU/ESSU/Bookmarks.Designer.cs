@@ -44,11 +44,12 @@ namespace ESSU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookmarks));
             this.panel_topbar = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_min = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.list_bookmarks = new System.Windows.Forms.ListBox();
             this.txt_url = new System.Windows.Forms.TextBox();
             this.btn_add = new System.Windows.Forms.Button();
@@ -74,25 +75,14 @@ namespace ESSU
             this.panel_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.panel_topbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Add or Launch a Bookmark";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 32);
+            this.label1.Size = new System.Drawing.Size(95, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Bookmarks";
             // 
@@ -136,6 +126,17 @@ namespace ESSU
             this.btn_exit.TabIndex = 6;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.150944F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(13, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Add or Launch a Bookmark";
             // 
             // list_bookmarks
             // 
@@ -233,9 +234,11 @@ namespace ESSU
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Bookmarks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bookmarks";
             this.panel_topbar.ResumeLayout(false);
             this.panel_topbar.PerformLayout();
             this.ResumeLayout(false);
