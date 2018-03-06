@@ -621,7 +621,7 @@ namespace ESSU
                 Settings.bookmarkGOTO = string.Empty;
             }
 
-            if (this.Width == this.MinimumSize.Width && picture_game_preview.Width != 619) picture_game_preview.Width = 619; //Game preview is always correct size on window load 
+            if (this.Width == this.MinimumSize.Width && picture_game_preview.Width != 607) picture_game_preview.Width = 607; //Game preview is always correct size on window load 
             //(for some reason there is a strange bug where it loaded WAY to large, this is an ugly fix)
 
             if (list_games.SelectedIndex == -1) picture_game_preview.Image = null; //if by anycase there is no game selected, remove the game preview image
