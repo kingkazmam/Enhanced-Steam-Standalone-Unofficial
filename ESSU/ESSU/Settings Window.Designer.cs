@@ -339,6 +339,7 @@ namespace ESSU
             this.btn_sEXEopen.TabIndex = 8;
             this.btn_sEXEopen.Text = "...";
             this.btn_sEXEopen.UseVisualStyleBackColor = true;
+            this.btn_sEXEopen.Click += new System.EventHandler(this.btn_sEXEopen_Click);
             // 
             // lbl_steamexe
             // 

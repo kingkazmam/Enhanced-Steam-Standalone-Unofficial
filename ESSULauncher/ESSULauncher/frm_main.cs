@@ -36,7 +36,6 @@ namespace ESSULauncher
         {
             InitializeComponent();
             initbrowser();
-            
         }
 
         ChromiumWebBrowser libUpdater = new ChromiumWebBrowser("http://steamcommunity.com/my/games/?tab=all");
@@ -54,14 +53,13 @@ namespace ESSULauncher
             {
                 string html = taskHtml.Result;
                 if (!html.Contains("mainLoginPanel"))
-                {  
-                    try
+                {
+                    File.WriteAllText(Application.StartupPath + "\\userlib.info", html);
+                   
+                    if (!File.Exists(Application.StartupPath + "\\es.su") && !File.Exists(Application.StartupPath + "\\silent.startup"))
                     {
-                        File.WriteAllText(Application.StartupPath + "\\library.txt", html);
-                        if (!File.Exists(Application.StartupPath + "\\es.su") && !File.Exists(Application.StartupPath + "\\slient.starup")) Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
-                        if (File.Exists(Application.StartupPath + "\\slient.starup")) File.Delete(Application.StartupPath + "\\slient.starup");
+                        if (File.Exists(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe")) Process.Start(Application.StartupPath + "\\Enhanced Steam Standalone Unofficial.exe");
                     }
-                    catch { }
                     Application.Exit();
                 }
                 else
@@ -73,15 +71,9 @@ namespace ESSULauncher
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void frm_main_Load(object sender, EventArgs e)
         {
-            if (File.Exists(Application.StartupPath + "\\es.su"))
-            {
-                this.SendToBack();
-                this.ShowInTaskbar = false;
-            }
-            
-
+            if (File.Exists(Application.StartupPath + "\\silent.startup")) this.SetDesktopLocation(100000, 100000);
         }
     }
 }

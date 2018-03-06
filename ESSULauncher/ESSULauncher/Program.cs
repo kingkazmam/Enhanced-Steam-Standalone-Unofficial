@@ -34,15 +34,27 @@ namespace ESSULauncher
         [STAThread]
         static void Main()
         {
-            //Process.Start(Application.StartupPath + "\\Library Updater.exe");
-
-
             try
             {
                 Process[] myProcesses = Process.GetProcessesByName("Enhanced Steam Standalone Unofficial");
-                if (myProcesses.Count() > 0 && !File.Exists(Application.StartupPath + "\\slient.starup"))
+                if (myProcesses.Count() > 0)
                 {
-                    File.WriteAllText(Application.StartupPath + "\\es.su", "");
+                    if (File.Exists(Application.StartupPath + "\\silent.startup"))
+                    {
+                        Cef.EnableHighDPISupport();
+                        var settings = new CefSettings()
+                        {
+                            CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ESS\\Cache")
+                        };
+                        Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
+                        Application.EnableVisualStyles();
+                        Application.SetCompatibleTextRenderingDefault(false);
+                        Application.Run(new frm_main());
+                    }
+                    else
+                    {
+                        File.Create(Application.StartupPath + "\\es.su").Close();
+                    }
                 }
                 else 
                 {

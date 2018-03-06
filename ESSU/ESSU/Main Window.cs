@@ -62,6 +62,7 @@ namespace ESSU
         public static int maxGames = 100000;
         static readonly int GWL_STYLE = -16;
         static readonly int WS_VISIBLE = 0x10000000;
+        bool DoneRe = true;
         bool Installed = false;
         Point mousePos = new Point(0, 0);
         Form frm_friends = new Friends_Window();
@@ -134,28 +135,7 @@ namespace ESSU
         }
         private void frm_main_Load_1(object sender, EventArgs e) //More Startup shit
         {
-            try
-            {
-                foreach (string line in File.ReadAllLines(Application.StartupPath + "\\library.txt"))
-                {
-                    if (line.Contains("<title>"))
-                    {
-                        string l = line;
-                        l = l.Replace("<title>Steam Community :: ", string.Empty);
-                        l = l.Replace(" :: Games</title>", string.Empty);
-                        if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
-                        btn_user.Text = l;
-                    }
-                    if (line.Contains("Wallet"))
-                    {
-                        string l = line;
-                        l = l.Replace("Wallet <b>(", string.Empty);
-                        l = l.Replace(")</b>", string.Empty);
-                        btn_account.Text = l;
-                    }
-                }
-            }
-            catch { }
+            nameUpdate();
             this.BringToFront();
             this.Size = this.MinimumSize;
             picture_game_preview.Width = 494;
@@ -164,7 +144,7 @@ namespace ESSU
         {
             if (!vivaldi.HasExited) vivaldi.Kill();
             if (Cef.IsInitialized) Cef.Shutdown();
-
+            if (File.Exists(Application.StartupPath + "\\silent.startup")) File.Delete(Application.StartupPath + "\\silent.startup");
             switch (e.CloseReason)
             {
                 case CloseReason.ApplicationExitCall:
@@ -332,7 +312,33 @@ namespace ESSU
             SetParent(vivaldi.MainWindowHandle, panel_browser.Handle); //embeds the browser to the application in a panel called "panel_browser"
             SetWindowLong(vivaldi.MainWindowHandle, GWL_STYLE, WS_VISIBLE); //I honestly dont know what this does but its needed i think
         }
+        public void nameUpdate()
+        {
+            try
+            {
+                foreach (string line in File.ReadAllLines(Application.StartupPath + "\\userlib.info"))
+                {
+                    if (line.Contains("<title>"))
+                    {
+                        string l = line;
+                        l = l.Replace("<title>Steam Community :: ", string.Empty);
+                        l = l.Replace(" :: Games</title>", string.Empty);
+                        if (l.Length >= 18) { l = l.Substring(0, 15) + "..."; }
+                        btn_user.Text = l;
+                    }
+                    if (line.Contains("Wallet"))
+                    {
+                        string l = line;
+                        l = l.Replace("Wallet <b>(", string.Empty);
+                        l = l.Replace(")</b>", string.Empty);
+                        l = l.Replace("</a>", string.Empty);
+                        btn_account.Text = l;
 
+                    }
+                }
+            }
+            catch { }
+        }
         public void steamGameListUpdate() //Here we go...This adds all the necessary info i need about the games you have
         {
             orgindex = 0; //just an index counter
@@ -415,13 +421,12 @@ namespace ESSU
 
             try { if (list_games.Items.Count >= 0) list_games.SelectedIndex = 0; } catch { } //tries to select the first game (tries, because you might not have any game)
         }
-
         void loadLib() //Some fun shit
         {
             indexGame = 0; //index counter
             try
             {
-                foreach (string line in File.ReadLines(Application.StartupPath + "\\library.txt")) //gets the full library you have from a .txt file created when you first login at the login window
+                foreach (string line in File.ReadLines(Application.StartupPath + "\\userlib.info")) //gets the full library you have from a .txt file created when you first login at the login window
                 {
                     if (line.Contains("http://steamcommunity.com/app/")) //looks for a valid game
                     {
@@ -507,7 +512,6 @@ namespace ESSU
                 orgindex++; //NEXT
             }
         }
-
         void showCate() //Category Magic
         {
 
@@ -539,7 +543,6 @@ namespace ESSU
             }
             list_games.SelectedIndex = -1;
         }
-
         private void startGame(string appid) //launches a steam game
         {
             try
@@ -555,21 +558,37 @@ namespace ESSU
             {
                 MessageBox.Show(Settings.steamEXE);
             }
-        }
+        } 
 
         private void refresh_Tick(object sender, EventArgs e) //Thats a timer that runs 100 times a second, or at least thats what it says it does
         {
-            if (string.Format("{0:mm}", DateTime.Now).EndsWith("0") || string.Format("{0:mm}", DateTime.Now).EndsWith("5"))
+            int time = Convert.ToInt32(string.Format("{0:mm}", DateTime.Now));
+            if (time % 2 == 1)
             {
-                File.WriteAllText(Application.StartupPath + "\\slient.starup", "");
-                try
+                if (DoneRe == true)
                 {
-                    Process.Start(Application.StartupPath + "\\ESSULauncer.exe");
-                } catch { }
+                    DoneRe = false;
+                    File.Create(Application.StartupPath + "\\silent.startup").Close();
+                    try
+                    {
+                        Process.Start(Application.StartupPath + "\\ESSULauncher.exe");
+                    }
+                    catch (Exception ex){ MessageBox.Show(ex.ToString()); }
+                }
+               
             }
-            else if (string.Format("{0:mm}", DateTime.Now).EndsWith("1") || string.Format("{0:mm}", DateTime.Now).EndsWith("6"))
+            else if (time % 2 == 0)
             {
-                steamGameListUpdate();
+                if (DoneRe == false)
+                {
+                    DoneRe = true;
+                    if (File.Exists(Application.StartupPath + "\\silent.startup")) File.Delete(Application.StartupPath + "\\silent.startup");
+                    int num = list_games.SelectedIndex;
+                    steamGameListUpdate();
+                    try { list_games.SelectedIndex = num; } catch { }
+                    nameUpdate();
+                }
+                
             }
 
             try
@@ -1099,7 +1118,7 @@ namespace ESSU
             }
             catch
             {
-                
+                lbl_newsParagraph.Text = null;
             }
 
         }
